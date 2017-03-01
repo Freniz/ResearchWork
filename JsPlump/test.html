@@ -1,0 +1,68 @@
+<html>
+
+<head>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jsPlumb/1.4.1/jquery.jsPlumb-1.4.1-all-min.js"></script>
+  
+
+    <script>
+
+  var instanceRegistry = [];
+  var containerRegistry = [];
+
+  $(function() {
+    var endpointOptions = {
+      isSource: true,
+      isTarget: true
+    };
+    $('#newContainerButton').click(newContainer);
+
+    function newContainer() {
+      var containerIndex = "container" + (containerRegistry.length + 1);
+      $('#containerTemplate').clone(true).appendTo('#mainContainer').show().attr('id', containerIndex).draggable({
+        containment: 'mainContainer',
+        cursor: 'move'
+      });
+ 
+        var e1 = jsPlumb.addEndpoint("container1", {
+                isSource:true,
+                isTarget:true,
+                anchor:"AutoDefault"
+               
+            });
+
+                    
+    }
+
+
+  });
+  </script>
+  <style>
+  .container {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: #F9F9F9;
+    border: 1px solid #000000;
+  }
+   #mainContainer {
+            padding: 20px;
+            width:80%; height: 400px;
+            border: 1px solid gray;
+        }
+  </style>
+</head>
+
+<body>
+<div class="controls">
+  <button id="newContainerButton">New container</button>
+</div>
+<div id="mainContainer">
+</div>
+
+<div id="containerTemplate" class="container" style="display: none;">
+  
+</div>
+
+  </body>
