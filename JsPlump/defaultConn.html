@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html ng-app="">
+<head>
+    <style>
+        #diagramContainer {
+            padding: 20px;
+            width:80%; height: 400px;
+            border: 1px solid gray;
+        }
+        
+        .item {
+            height:80px; width: 80px;
+            border: 1px solid blue;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="diagramContainer" class="abc">
+        <div id="d1" class="item">A</div>
+        <div id="d2" class="item" style="margin-left:50px;">B</div>
+        <div id="d3" class="item" style="margin-left:50px;">C</div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jsPlumb/1.4.1/jquery.jsPlumb-1.4.1-all-min.js"></script>
+    
+
+  <script>
+        jsPlumb.ready(function() {
+
+       jsPlumb.draggable($("#d1"));
+             var e1 = jsPlumb.addEndpoint("d1", {
+                isSource:true,
+                isTarget:true,
+                maxConnections:-1,
+                connectorHoverStyle: { strokeStyle:"green" }
+                
+            });
+
+            var e2 = jsPlumb.addEndpoint("d2", {
+                isSource:true,
+                isTarget:true, 
+                maxConnections:-1,
+                connectorHoverStyle: { strokeStyle:"green" }
+               
+            });  
+             var e3 = jsPlumb.addEndpoint("d3", {
+                isSource:true,
+                isTarget:true,
+                maxConnections:-1,
+                connectorHoverStyle: { strokeStyle:"green" } 
+                
+            }); 
+             jsPlumb.bind('click', function (connection, e) {
+                alert("Are you sure want to detach connection ");
+                 jsPlumb.detach(connection);
+             });  
+             jsPlumb.bind('connection',function(info){
+                 var con=info.connection;
+                 var arr=jsPlumb.select({source:con.d2,target:con.d2});
+                 if(arr.length>1){
+                    alert("You have already connected");
+                    jsPlumb.detach(con);
+                 }
+                });
+                jsPlumb.bind('connection', function(info) { 
+                    var arr=jsPlumb.select({source:con.d2,target:con.d2});
+                    console.log('connection bind - From: ' + info.d1 + ' To: ' + info.d2);
+
+                    if (info.d1 == info.d2 & arr.length>1){
+                        console.log('d1 == d2');
+                         alert("You have already connected");
+                        jsPlumb.detach(info);
+                    }
+                });        
+           
+        });   
+    </script> 
+</body>
+</html>
