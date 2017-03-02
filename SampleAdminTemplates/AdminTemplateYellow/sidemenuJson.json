@@ -1,0 +1,76 @@
+[  
+   
+     
+      {
+       
+         "id":"aboutUs",
+         "menuHeading":"Dashboard",
+         "menuType":"text",
+         "iconClass":"fa fa-dashboard",
+         "message":"10",
+         "iClass":"caret pull-right",
+         "subMenus":[{
+          "id":"aboutUs-profile",
+          "url":"",
+          "menuHeading":"Profile",
+          "icon":"",
+          "iconClass":"fa fa-circle-o"
+         },
+         {
+          "id":"aboutUs-settings",
+          "url":"",
+          "menuHeading":"Settings",
+          "iconClass":"fa fa-circle-o"
+         },
+         {
+          "id":"",
+          "url":"",
+          "menuHeading":"Logout",
+          "iconClass":"fa fa-circle-o"
+         }
+       ] 
+         },
+         {
+         "id":"aboutUs",
+         "menuType":"text",
+         "iconClass":"fa fa-flag-o",
+         "message":"9"
+         },
+         {
+         "id":"aboutUs",
+         "menuType":"text",
+         "iconClass":"fa fa-gears"
+         },
+          {  
+         "id":"aboutUs",
+         "menuType":"text",
+         "iconClass":"fa fa-envelope-o",
+         "message":"4",
+         "iClass":"caret pull-right",
+         "subMenus":[{
+          "id":"aboutUs-profile",
+          "url":"",
+          "menuHeading":"Profile",
+          "icon":"",
+          "iconClass":"fa fa-user text-aqua",
+          "iClass":"caret pull-right",
+          "subMenus":[{
+            "menuHeading":"secondlevel",
+            "iconClass":"fa fa-circle-o"
+          }]
+         },
+         {
+          "id":"aboutUs-settings",
+          "url":"",
+          "menuHeading":"Settings",
+          "iconClass":"fa fa-cog text-green"
+         },
+         {
+          "id":"",
+          "url":"",
+          "menuHeading":"Logout",
+          "iconClass":"fa fa-times text-red"
+         }
+       ]     
+      }
+       ]
