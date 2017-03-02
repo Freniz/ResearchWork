@@ -1,0 +1,20 @@
+<div class="row bg vdivide">
+        <div class="col-md-6">
+            <div class="row">
+            <div class="col-md-8">
+            <freniz-contact-form form="section.sectionProps.form" ng-if="section.id == 'contactUs'">
+            </freniz-contact-form>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <freniz-design-address section="section" ng-if="section.id == 'contactUs'">
+            </freniz-design-address>
+        </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <freniz-design-map section="section" ng-if="section.id == 'contactUs'">
+        </freniz-design-map>
+     </div>
+</div>

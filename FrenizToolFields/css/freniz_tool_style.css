@@ -1,0 +1,41 @@
+body {
+      padding-top: 50px;
+    }
+    .starter-template {
+      padding: 40px 15px;
+      text-align: center;
+    }
+    .freniz-navbar{
+      background-color : #0E2A12;
+      border-bottom:none;
+    }
+     .freniz-navbar .container{
+      margin-left:0px;
+      width:100%!important;
+      padding-left:0px;
+    }
+
+    .freniz-navbar .navbar-header{
+      padding-left:15px;
+      background-color:#D1D2D4;
+      min-width:250px;
+      background-image:url('../images/Freniz-Logo.png');
+      background-repeat:no-repeat;
+      background-position: center;
+      
+    }
+    @media (min-width:768px){
+      .freniz-navbar .navbar-header:after{
+          content: "";
+          display: block;
+          width: 0; 
+          height: 0; 
+          border-top: 50px solid transparent;
+          border-bottom: 50px solid transparent;
+          border-left: 50px solid #D1D2D4;
+          position: fixed;
+          z-index:1031;
+          top: -50px;
+          left: 250px;
+      }
+    }
