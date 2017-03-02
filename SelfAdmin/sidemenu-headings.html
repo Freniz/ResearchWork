@@ -1,0 +1,10 @@
+<ul class="sidebar-menu">
+
+        <li class="dropdown" ng-repeat="menu in sidemenus">
+          <a href="{{(menu.subMenus?'#':menu.url)}}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"  ><i class="{{menu.iconClass}}"></i>{{menu.menuHeading}}<span class="{{menu.iClass}}"></span></a></span>
+
+         <sidemenu-headings class="treeview-menu" sidemenus="menu.subMenus"></sidemenu-headings>  
+                                   
+        
+        </li>
+</ul>
