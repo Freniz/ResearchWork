@@ -1,0 +1,74 @@
+[   
+      {
+       
+         "id":"aboutUs",
+         "menuType":"text",
+         "iconClass":"fa fa-bell-o",
+         "Heading":"Departments",
+         "message":"10",
+         "subMenus":[{
+          "id":"aboutUs-profile",
+          "url":"",
+          "menuHeading":"Profile",
+          "icon":"",
+          "iconClass":"fa fa-user text-aqua",
+          "iClass":"fa fa-angle-left",
+          "subMenus":[{
+            "menuHeading":"secondlevel",
+            "iconClass":"fa fa-circle-o",
+            "iClass":"fa fa-angle-left",
+          "subMenus":[{
+            "menuHeading":"Thirdlevel",
+            "iconClass":"fa fa-circle-o"
+            }]
+          }]
+         },
+         {
+          "id":"aboutUs-settings",
+          "url":"",
+          "menuHeading":"Settings",
+          "iconClass":"fa fa-cog text-green"
+         },
+         {
+          "id":"",
+          "url":"",
+          "menuHeading":"Logout",
+          "iconClass":"fa fa-times text-red"
+         }
+       ] 
+         },
+         {
+         "id":"aboutUs",
+         "menuType":"text",
+         "iconClass":"fa fa-flag-o",
+         "Heading":"Staff",
+         "message":"9"
+         },
+         {  
+         "id":"aboutUs",
+         "menuType":"text",
+         "iconClass":"fa fa-envelope-o",
+         "Heading":"Add New",
+         "message":"4",
+         "subMenus":[{
+          "id":"aboutUs-profile",
+          "url":"",
+          "menuHeading":"Profile",
+          "icon":"",
+          "iconClass":"fa fa-user text-aqua"
+         },
+         {
+          "id":"aboutUs-settings",
+          "url":"",
+          "menuHeading":"Settings",
+          "iconClass":"fa fa-cog text-green"
+         },
+         {
+          "id":"",
+          "url":"",
+          "menuHeading":"Logout",
+          "iconClass":"fa fa-times text-red"
+         }
+       ]     
+      }
+       ]
