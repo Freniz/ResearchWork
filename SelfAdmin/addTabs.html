@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/AdminLTE.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -41,41 +42,72 @@
           <side-menu> </side-menu>
         </div>
     </aside>
-    </section>
+
+
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
 
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-        Set Header For Your Dashboard
-      </h1> </section>
+          Set Tabs For Your Dashboard
+        </h1>
+       </section>
 
       <!-- Main content -->
       <section class="content">
-        <div class="row">
-          <div class="col-md-9">
+        <div class="row" ng-controller="sortCtrl">
+          <div class="col-md-6">
             <div class="box box-info">
               <div class="box-header with-border">
-                <h3 class="box-title">Header</h3> </div>
+                <h3 class="box-title">Tabs</h3> </div>
               <!-- /.box-header -->
 
               <!-- form start -->
-              <form class="form-horizontal">
-                <div class="box-body">
-                  <textarea class="form-control" rows="10" placeholder="<header> .......... </header>"></textarea>
+              <form class="form-horizontal" style="margin-top:10px;">
+              <div class="form-group text-center">
+                          <label for="name" class="col-sm-4 ">Initial Tab Select</label>
+                          <div class="col-sm-6">
+                            <select class="form-control">
+                              <option>Home</option>
+                              <option>Faqs</option>
+                              <option>News</option>>
+                            </select>
+                          </div>
+                        </div>
+                 <div class="col-md-12" >
+                  <ul ui-sortable="sortableOptions" class="list-group">
+                  <li ng-repeat="person in people" class="list-group-item">{{person}}</li>
+                  </ul>
                 </div>
                 <!-- /.box-body -->
                 <div class="box-footer">
                   <button type="submit" class="btn btn-info pull-right">Add</button>
                 </div>
                 <!-- /.box-footer -->
-
-              </form>
+              <form class="form-horizontal">
             </div>
             <!-- /.box -->
           </div>
           <!--/.col -->
+<!-- right column -->
+        <div class="col-md-6">
+          <!-- Horizontal Form -->
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">Json Form</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form class="form-horizontal" style="margin-top:20px;">
+                <pre>{{people}}</pre>
+              <!-- /.box-body -->
+              <div class="box-footer">
+              </div>
+              <!-- /.box-footer -->
+            </form>
+          </div>
+
         </div>
         <!-- /.row -->
       </section>
@@ -92,8 +124,10 @@
     <!-- Bootstrap 3.3.6 -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="dist/js/angular.js"></script>
-    <script type="text/javascript" src="dist/js/menu_script.js"></script>
     <script type="text/javascript" src="dist/js/sortable.js"></script>
+
+
+    <script type="text/javascript" src="dist/js/menu_script.js"></script>
     <!-- Morris.js charts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
     <script src="plugins/morris/morris.min.js"></script>
