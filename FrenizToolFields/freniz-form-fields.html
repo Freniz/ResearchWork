@@ -1,0 +1,123 @@
+<div class="row">
+    <label class="col-sm-2 control-label">{{field.props.label}}</label>
+    <div class="col-sm-10">
+        <!-- for input text -->
+        <div>
+            <input class="form-control" ng-if="field.type=='text'" ng-model="field.value" type="text">
+
+        </div>
+
+        <!-- for text area -->
+        <textarea class="form-control" rows="5" id="textarea" ng-if="field.type=='textarea'" ng-model="field.value" type="textarea">  
+        </textarea>
+
+        <!-- for password -->
+        <input class="form-control" id="Input" type="password" ng-if="field.type=='password'" ng-model="field.value">
+
+
+        <!-- for select box -->
+        <select class="form-control" id="sell" ng-if="field.type=='select'" ng-model="field.value" type="select">
+              <option value="">--Select User--</option>
+              <option ng-repeat="option in field.props.listOfValues" value="{{option.value}}">{{option.label}}</option>
+        </select>
+
+
+        <!-- for check box -->
+
+        <div class="checkbox" ng-if="field.type=='checkbox'" type="checkbox">
+            <label ng-repeat="option in field.props.listOfValues" class="checkbox-inline">
+                      <input type="checkbox" checklist-model="field.value"  checklist-value="option.value" >
+                      {{option.label}}
+            </label>
+
+        </div>
+
+        <!-- for radio button -->
+        <div class="radio" ng-if="field.type=='radio'" type="radio">
+            <label ng-repeat="option in field.props.listOfValues" class="radio-inline">
+                      <input type="radio"  value="{{option.value}}" ng-model="field.value">
+                      {{option.label}}
+                    </label>
+        </div>
+
+        <!-- for number -->
+        <input class="form-control" ng-if="field.type=='number'" type="text" ng-model="field.value">
+
+        <!-- for range -->
+        <input type="range" name="points" min="0" max="10" ng-if="field.type=='range'" type="range" ng-model="field.value">
+
+        <!-- for date  -->
+        <div class='input-group date' ng-if="field.type=='date'" type="date">
+            <input type="text" class="form-control" datetime-picker="mediumDate" is-open="picker1.open" enable-time="false" datepicker-options="picker1.datepickerOptions" close-on-date-selection="false" datepicker-append-to-body="true" ng-model="field.value" />
+
+            <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="picker1.open=true"><i class="fa fa-calendar"></i></button>
+                    </span>
+        </div>
+
+        <!-- for time -->
+        <div class='input-group date' ng-if="field.type=='time'" type="time">
+            <input type="text" class="form-control" datetime-picker="HH:mm" is-open="picker2.open" enable-date="false" timepicker-options="picker2.timepickerOptions" close-on-selection="true" ng-model="field.value" />
+            <span class="input-group-btn">
+                      <button type="button" class="btn btn-default" ng-click="picker2.open=true"><i class="fa fa-clock-o"></i></button>
+                  </span>
+        </div>
+
+        <!-- for date and time -->
+        <div class='input-group date' ng-if="field.type=='datetime'" type="datetime">
+            <input type="text" class="form-control" datetime-picker="MM/dd/yyyy HH:mm" is-open="picker3.open" ng-model="field.value" />
+            <span class="input-group-btn">
+                  <button type="button" class="btn btn-default" ng-click="picker3.open=true"><i class="fa fa-calendar"></i></button>
+              </span>
+        </div>
+
+        <!-- for map single -->
+        <ng-map center="[40.74, -74.18]" ng-if="field.type=='mapSingle'" type="mapSingle" ng-model="field.value"></ng-map>
+
+        <!-- for static text -->
+        <div ng-if="field.type=='staticText'" type="staticText">
+
+            <p>test</p>
+
+        </div>
+
+        <!-- for html -->
+        <div ng-if="field.type=='html'" type="html">
+
+            <p ng-bind-html=" myHTML | to_trusted" />
+
+        </div>
+
+
+        <!-- for line -->
+        <div ng-if="field.type=='line'" type="line">
+            <HR COLOR="purple" WIDTH="60%">
+        </div>
+
+
+        <!-- for spacer -->
+        <div ng-if="field.type=='spacer'" type="spacer">
+            <spacer type="vertical" size="100">test test</spacer>
+        </div>
+        <!--  <spacer type="block" width="50" ng-if="field.type=='spacer'" type="spacer" />
+ -->
+        <!-- for button -->
+        <div ng-if="field.type=='button'" type="button">
+            <button ng-click="submit()">Submit</button>
+        </div>
+
+        <!-- for upload -->
+        <div ng-if="field.type=='upload'" type="upload">
+            <input type="file" multiple data-freniz-sectionIndex="{{sectionIndex}}" data-freniz-fieldIndex="{{fieldIndex}}" onchange="angular.element(this).scope().fileSelected(angular.element(this))" />
+
+        </div>
+
+        <!-- for rich text -->
+
+        <!-- NOTE: TinyMCE textareas must have id's -->
+        <textarea data-ui-tinymce id="tinymce1" ng-if="field.type=='richText'" data-ng-model="field.value" type="richText"></textarea>
+
+
+        <span ng-show="field.validation.validationErrorFlag" style="color:red">{{field.validation.validationErrorMsg}}</span>
+    </div>
+</div>

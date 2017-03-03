@@ -1,0 +1,554 @@
+{  
+   "url":"http://www.freniz.com",
+ 
+   "sections":[  
+      {  
+         "sectionHeading":"Admission Management",
+         "id":"Admission",
+         "sectionId":"",
+         "sectionColor":"#f2f2f2",
+         "sectionImg":"images/admission.jpg",
+         "sectionProps":{
+            "heading" : "Admission Management:",
+            "content":"The college ERP admission module of the cloud-based enterprise resource planning (ERP) software has been designed to conveniently and easily organize the admission procedures of the client institution. Users truly appreciated the simplicity of the module helping them to keep data like promoted/demoted students, payment status, and other details at their fingertips having no expertise to operate the module. The college ERP admission module offers best online solutions for joining mess and admissions to the hostel and course. The User can access different templates as well as batches from any location."
+            
+         },
+         "key":[
+                              "User friendly Admission Process",
+                              "Instant photography through webcam",
+                                "Instant I Card generation with duplicate I Card facility",
+                               "Bank Chelan generation",
+                               "Automatic Student kit generation",
+                                "Category wise report generation",
+                                "Auto generation of eligibility PNS report"  
+            ]
+
+      },
+      {  
+         "sectionHeading":"Fee Management",
+         "id":"Fees",
+         "sectionId":"",
+         "sectionColor":"#e6ffff",
+         "sectionImg":"images/fees.jpg",
+         "sectionProps":{
+            "heading" : "Fee Management:",
+            "content":"The college fee management module of the cloud-based enterprise resource planning (ERP) software provides path-breaking software solutions for fees management. Literally, we provide completely secured gateways to pay your students’ fees without any problem. We are obsessed with customer satisfaction and we leave no stone unturned to make our clients comfortable with all possible solutions. Pay fees online through our secured system and help us to provide hassle-free education to your students. "
+         },
+         "key":[
+                              "Flexible & convenient fee collection system",
+                              "We offer secured payment gateway like bill desk",
+                              "Ability to collect dues on backdates also",
+                               "Fees report as per exam",
+                               "Easy analysis of fees as per exams",
+                                "You can collect report branch wise, due date wise and head wise",
+                                "We also provide penalty facilities in our modules"  
+
+            ]
+      },
+      {  
+         "sectionHeading":"HR and payroll",
+         "id":"HR",
+         "sectionId":"",
+         "sectionColor":"#ffe6ff",
+         "sectionImg":"images/hr.jpg",
+         "sectionProps":{
+            "heading" : "HR and payroll:",
+            "content":"The HR and payroll module helps you to collect the data from biometric system or from the entered record of all the employees and is passed to payroll for payment of salary and other perks."
+         },
+         "key":[
+                              "Manage integrated and centralized employee database",
+                              "Complete leave management process",
+                              "Assignment of leave employee / department wise",
+                               "Assigning compensatory off-leave",
+                               "Manage Multi level Leave Approval Process",
+                                "Detain vacation leave" 
+
+            ]
+      },
+      {  
+         "sectionHeading":"Attendance Management",
+         "id":"Attendance",
+         "sectionId":"",
+         "sectionColor":"#ffe6e6",
+         "sectionImg":"images/attendance.jpg",
+         "sectionProps":{
+            "heading" : "Attendance Management:",
+            "content":"The attendance management module is designed to handle the attendance requirement of institutes and colleges of all sizes. Attendance of the students is taken and the same is entered in the systems by the respective teachers. All the reports can be generated within no time so that certain decisions can be taken based on attendance."
+         },
+         "key":[
+                              "Period wise attendance: At colleges, attendance is taken in each class and attendance management module of the ERP software beautifully performs the task.",
+                              "Absentees: Attendance management module marks absent students separately. This feature helps teachers to find out absent students and support them to cover missed-out portions taught the day student was absent.",
+                              "Report Preparation: Attendance management module prepares instant reports separately on various categories including (a) subject-wise report, (b) defaulter report, and (c) attendance report. This feature of report generation helps the user institution to take attendance-based decisions promptly.",
+                               "Event Attendance: Attendance management module includes event attendance and reflects on attendance monitoring.",
+                               "Teacher can take attendance of theory and practical using their mobile phone through the attendance management module. "
+
+            ]
+      },
+      {  
+         "sectionHeading":"Library",
+         "id":"Library",
+         "sectionId":"",
+         "sectionColor":"#e6ffe6",
+         "sectionImg":"images/library.jpg",
+         "sectionProps":{
+            "heading" : "Library:",
+            "content":"Library automation system is a part of the complete university / college management system and is also available individually. It offers a simple yet powerful solution to automate all kinds of libraries. The software helps you manage print materials like books, journals and magazines along with the non-print materials like eBooks, cd, dvd, e-journals, etc. It helps to maintain acquisition register, stock register, reports etc. This module can be integrated with bar codes, Rf-id's & smart cards. You can print barcoded book labels as well as library cards."
+         },
+         "key":[
+               " Ordering/receiving/invoicing",
+               " Classifying/indexing",
+               " Circulation of books",
+               " Tracking ",
+               " Holdings ",
+               " Public interface",
+               " Multi-user interface",
+               " Book purchase management",
+               " Register maintenance",
+               " Payment",
+               " Binding",
+               " Stock Verification ",
+               " Overdue notice",
+               " Recall notice",
+               " Notices",
+               " Reminders",
+               " Budget Analysis",
+               " Reports availability"
+         ]
+
+      },
+      {  
+         "sectionHeading":"Visitors",
+         "id":"Visitors",
+         "sectionId":"",
+         "sectionColor":"#e6f2ff",
+         "sectionImg":"images/visitor.jpg",
+         "sectionProps":{
+            "heading" : "Visitors:",
+            "content":"Visitors Management has been planned particularly to offer a quicker, more astute and more secure approach to oversee guests in academies and colleges. Guests are required to enter their data and consent to any strategies set by the universities or colleges, before being given a photograph of the staff part they are meeting. A message will then be sent to illuminate the staff individual from their visitor’s entry. Sign out is also a brisk and basic process and is done by the checking of the identification code imprinted on the guest’s name.The module can be utilized to create different reports including figuring’s of staff and contractual worker’s working hours, and a vital clearing report among others. As the organization system is cloud based, this makes the clearing report open from outside emergency meeting indicates without having print off any guest records."
+         }, 
+         "key":[
+               " Multi-Language support",
+               " Optional standardized tag key labels for staff and consistent guests",
+               " Personalized college strategy acknowledgement structure",
+               " Customizable guest marks and photographs",
+               " On-line reporting",
+               " Visitor photograph catching for security",
+               " Generate exact time sheets for workers, supply educators and volunteers",
+               " Message sent to advise staff individual from guest’s landing",
+               " Provides a record of guests",
+               " Scheduled guests can be communicated in advance",
+               " Create guest types"
+          ]
+            },
+      {  
+         "sectionHeading":"Hostel",
+         "id":"Hostel",
+         "sectionId":"",
+         "sectionColor":"#f2e6ff",
+         "sectionImg":"images/hostel.jpg",
+         "sectionProps":{
+            "heading" : "Hostel:",
+            "content":"Hostel management system offers a full featured accommodation system to efficiently manage the entire residential facility in the University of College. Reducing the staff & paper works, this accommodation software will keep the updated records of students, their meal, lodging, transfer room and other facilities. The software allocates rooms to the registered students based on their preferences and records their details of using food, lodging and other facilities along with fee and other advance payment details. The system also gathers a feedback on the room, food and other amenities on a regular basis and sends fee reminders to all registered students. This hostel management system monitors attendance, disciplinary logs, room charge status and check-in check-out in hostel premises."
+         },
+         "key":[
+               " Room allotment",
+               " Room fees",
+               " Mess management",
+               " Visitor management",
+               " Report generation",
+               " Fee Collection",
+               " Room Management as Categorization of Rooms",
+               " Daily Attendance Register of Hostel",
+               " Hostel Reports"
+         ]
+
+        },
+      {  
+         "sectionHeading":"SMS",
+         "id":"SMS",
+         "sectionId":"",
+         "sectionColor":"#fff7e6",
+         "sectionImg":"images/sms.jpg",
+         "sectionProps":{
+            "heading" : "SMS:",
+            "content":"SMS based interactive system is a one-way information broadcasting tool to provide Institute/ Organization related information to the students/ parents/ visitors/staff on their mobile phones using SMS facility. SMS tool is very interactive and robust system to get information on the mobile phone as and when required."
+         },
+         "key":[
+               " SMS to the Parents",
+               " Delivery acknowledgement",
+               " Fees pending reminders",
+               " Holiday announcements",
+               " Schedules change notification",
+               " Send Homework details to parents",
+               " Template messaging",
+               " Flash messaging",
+               " Enhances communication",
+               " Frequent communication",
+               " Daily update availability",
+               " Access from anywhere",
+               " No need of expensive phone calls",
+               " Bulk SMS option",
+               " Reduced human effort",
+               " Less time consumption"
+
+
+         ]
+      },
+      {  
+         "sectionHeading":"Purchase",
+         "id":"Purchase",
+         "sectionId":"",
+         "sectionColor":"#ffe6f2",
+         "sectionImg":"images/store.jpg",
+         "sectionProps":{
+            "heading" : "Purchase and store:",
+            "content":"The Store Management module will help to maintain all records of college stock. This Module handles all types of transactions regarding purchase, storage and issue of stock items to various departments,Student Feedback approach is basically about instituional Practises, Process and Frameworks."
+         },
+         "key":[
+               "Stock list ",
+               "Category / department wise ",
+               "Supplier’s details ",
+               "Vendors list ",
+               "Day to day updates ",
+               "Purchase list ",
+               "Issue list ",
+               "Invoice generation ",
+               "Online transactions ",
+               "Stock availability ",
+               "Purchase request ",
+               "Purchase order generation ",
+               "Online purchasing ",
+               "Stock keeping ",
+               "Stock distribution ",
+               "Stock/item tracking ",
+               "Stock ID generation ",
+               "Alert to notify less stock "
+         ]
+      },
+      {  
+         "sectionHeading":"Finance",
+         "id":"Finance",
+         "sectionId":"",
+         "sectionColor":"#ebfaeb",
+         "sectionImg":"images/finance.jpg",
+         "sectionProps":{
+            "heading" : "Finance Module:",
+            "content":"Finance management solution manages college budget and meet college’s reporting requirements. This is a suite consisting of integrated modules that gives executive functions to college departments like Accounting, Payment operations, Transaction, Budget plan, Scholarship / Grants management, Stock Management, Book keeping and Report generation."
+         },
+         "key":[
+               " Time and cost effectiveness",
+               " Income received/spent recording",
+               " Pay expenses",
+               " Deposits recording",
+               " Electronic ordering / payment",
+               " Keep track of your institute equipment",
+               " General Ledger",
+               " Accounts Payable",
+               " Purchasing",
+               " Grants Managing",
+               " Budget Control",
+               " Report generation"
+         ]
+      },
+      {  
+         "sectionHeading":"Student Activity Management",
+         "id":"Student Activity Management",
+         "sectionId":"",
+         "sectionColor":"#f9ecf2",
+         "sectionImg":"images/student.jpg",
+         "sectionProps":{
+            "heading" : "Student Activity Management:",
+            "content":"The Student activity management module delivers operational and strategic goals for the student activity department. This module supports the operation of college’s extracurricular activities such as arts & sports, club activities, charity, mutual fund club etc."
+         },
+         "key":[
+               " Student activities",
+               " Student organizations",
+               " Programming",
+               " Events ",
+               " Fitness intramural sports",
+               " Reaction",
+               " Fun",
+               " Club management",
+               " Creating student guidelines",
+               " Online notice",
+               " Scheduling events",
+               " Student meetings",
+               " Social events",
+               " Program development",
+               " Program evaluation",
+               " Coordinating – facilities and equipment",
+               " Ensuring standards",
+               " Supervising",
+               " Report generation"
+         ]
+      },
+      {  
+         "sectionHeading":"Student Registration",
+         "id":"Student Registration",
+         "sectionId":"",
+         "sectionColor":"#fff2e6",
+         "sectionImg":"images/reg.jpg",
+         "sectionProps":{
+            "heading" : "Student Registration:",
+            "content":"Student registration is a difficult process for every parent.  This module provides the enrollment in the relevant course.  This module covers all principles of the college enrollment approaches and gives group registration facility for student or courses."
+         },
+         "key":[
+               " Student group registration",
+               " Courses group registration",
+               " Track course",
+               " Track status",
+               " Quick Reference",
+               " Group registrations to make payment process simple",
+               " Transfer registration to another person or another course",
+               " Quickly cancellation and refund of money",
+               " Billing online",
+               " Speed Registration",
+               " Mass registration option",
+               " Course descriptions",
+               " Academic history",
+               " Notification and alerts",
+               " General information",
+               " Schedule and office hours",
+               " Student’s information book",
+               " Course evaluation",
+               " Surveys"
+         ]
+      },
+      {  
+         "sectionHeading":"Result Processing and Analysis",
+         "id":"Result Processing and Analysis",
+         "sectionId":"",
+         "sectionColor":"#e6f9ff",
+         "sectionImg":"images/result.jpg",
+         "sectionProps":{
+            "heading" : "Result Processing and Analysis:",
+            "content":"The computation of results and analysis of students is obviously an object centred activity. Hence, this ERP implemented automatic processes that efficiently capture all the important data associated with the registration and examination result processing within the college and the interactions among the students and parents."
+         },
+         "key":[
+               "Enhance speedy result ",
+               " Eliminate error due to manual processing",
+               "Provide security measure to check result ",
+               "Student mischievous act of changing marks on the result sheet ",
+               "Performance analysis class wise ",
+               "Performance analysis batch wise ",
+               "Performance analysis course wise ",
+               "Graphical representations ",
+               "Report availability ",
+               "Reports in different formats "
+
+         ]
+      },
+      {  
+         "sectionHeading":"Examination Sitting Plan",
+         "id":"Examination Sitting Plan",
+         "sectionId":"",
+         "sectionColor":"#ecf9ec",
+         "sectionImg":"images/exam.jpg",
+         "sectionProps":{
+            "heading" : "Examination Sitting Plan:",
+            "content":"Our module helps to allot Seating for each student to every exam differently only by entering the number of rows and number of columns in the examination hall. The college exams can be conducted effortlessly and other benefits are listed below."
+         },
+         "key":[
+               "Invigilator settings ",
+               "Student exam fee verification ",
+               "Hall priority setting ",
+               "Exam hall view ",
+               "No: of columns and No: of rows ",
+               "Different combinations and patterns of seating ",
+               "Block details, Exam floor details ",
+               "Preparing Invigilator Duty List ",
+               "Sending invigilation appointment to internal invigilators ",
+               "Absentees report ",
+               "Debar Students List ",
+               "Theory examination seating ",
+               "Lab exam seating ",
+               "Notice Board Copy of seating arrangement ",
+               "Hall Wise Attendance Sheet ",
+               "Allocating assets in the exam hall "
+
+         ]
+      },
+      {  
+         "sectionHeading":"Time table Scheduling",
+         "id":"Time table Scheduling",
+         "sectionId":"",
+         "sectionColor":"#ffe6f2",
+         "sectionImg":"images/timetable.jpg",
+         "sectionProps":{
+            "heading" : "Time table Scheduling:",
+            "content":"Time Table module is the schedule maker for educational institutes. Each college’s schedule is different, so this module is customizable. Time table module verifies the duration, availability of faculty."
+         },
+         "key":[
+               " Auto generation of schedule from preset data",
+               " Manually amend and create timetables user friendly",
+               " Track absentees",
+               " E-alert",
+               " Time to time re-arrangement",
+               " Flexibility",
+               " Avoid conflicts",
+               " Facility to select learning/working days",
+               " Assign substitute teachers",
+               " In-depth classroom analysis",
+               " Report of teachers teaching a particular subject for a class",
+               " Report generation",
+               " Class-wise subject/teacher setting",
+               " Daily class activity recorder",
+               " Time Table verification",
+               " Schedule generation for lab/project/extra class/others",
+               " Reports"
+         ]
+      },
+       {  
+         "sectionHeading":"Administration Management",
+         "id":"Administration Management",
+         "sectionId":"",
+         "sectionColor":"#e6fff2",
+         "sectionImg":"images/admin.jpg",
+         "sectionProps":{
+            "heading" : "Administration Management:",
+            "content":"Administration management is the process of managing information through employees. This usually includes the storage and distribution of information within an organization. CloudEMS administration module offers the possibility to characterize diverse levels of access to data in the application, by characterizing particular groups of users."
+         },
+         "key":[
+               "Automatic generation of pass ",
+               "Monitor the number of visitors ",
+               "Easy access of information ",
+               "Incoming and outgoing calls monitoring & recording ",
+               "Keep records of all couriers ",
+               "Appointment management ",
+               "Meeting scheduling ",
+               "Generation reports ",
+               "Retrieval of records ",
+               "Better communication between departments ",
+               "Better communication between users ",
+               "Leaving message ",
+               "Meeting / appointment reminders",
+               "Address book ",
+               "Telephone directory ",
+               "Call register ",
+               "Report ",
+               "Follow up "
+
+         ]
+      },
+      {  
+         "sectionHeading":"Staff Attendance",
+         "id":"Staff Attendance",
+         "sectionId":"",
+         "sectionColor":"#e6ecff",
+         "sectionImg":"images/staff.jpg",
+         "sectionProps":{
+            "heading" : "Staff Attendance:",
+            "content":"The Staff attendance module helps in keeping the record of every employee in the college. Our attendance system effectively manages attendance of employees. This module maintains a database having information like details of the staff such as name, Id, photograph, position, contact details, etc. Staffs instead of marking in the attendance book, they can simply use this module."
+         },
+         "key":[
+               "Staff profile ",
+               "A User account with password ",
+               "Web based module for intercommunication ",
+               "Leave details ",
+               "Leave settings – category wise ",
+               "Reporting work / leave / permission to HOD ",
+               "Incoming and leaving time settings ",
+               "Automatic Email notifications ",
+               "Attendance status ",
+               "Leave sanctioning and approval ",
+               "Daily Attendance tracking and analysis ",
+               "RFID card for Staff Attendance ",
+               "Attendance report with different filter option",
+               "Advance leave report ",
+               "Biometric Technology for automatic attendance "
+         ]
+
+      },
+      {  
+         "sectionHeading":"Asset Management",
+         "id":"Asset Management",
+         "sectionId":"",
+         "sectionColor":"#e6fff9",
+         "sectionImg":"images/asset.jpg",
+         "sectionProps":{
+            "heading" : "Asset Management:",
+            "content":"The assets of the campus include different items such as computer, computer, lab equipment’s, and other items. Our Module is a flexible asset management module that efficiently deals with your campus’s stock keeping, tracking needs. It monitors the things that are transferred between different departments of the campus."
+         },
+         "key":[
+               "Item entry – bar code ",
+               "Vendor management ",
+               "Supervision ",
+               "Department setting ",
+               "Permission setting ",
+               "Controlling damage ",
+               "Tracking items dispatched ",
+               "Repair/service/return details ",
+               "Sales tax and value added tax – Calculating and assigning ",
+               "Monitoring quotations ",
+               "Handling receiptPurchase orders issue ",
+               "Stock ledgers controlling ",
+               "Sales management ",
+               "Sales report generation ",
+               "Monitoring items "
+         ]
+
+      },
+      {  
+         "sectionHeading":"Resource Management",
+         "id":"Resource Management",
+         "sectionId":"",
+         "sectionColor":"#ffe6ff",
+         "sectionImg":"images/resource.jpg",
+         "sectionProps":{
+            "heading" : "Resource Management:",
+            "content":"The resource management module helps in the development of an organization’s resources. Resources may include financial resources, human skills, inventory, production resources, IT resources, etc."
+         },
+         "key":[
+              "Organization’s data on resource demands ",
+              "Supply of resources ",
+              "Resource leveling ",
+              "Keeping the stock of resources ",
+              "Reducing excess inventories ",
+              "Shortage control ",
+              "Available resource list "
+           ]
+      },
+      {  
+         "sectionHeading":"Enquiry Management",
+         "id":"Enquiry Management",
+         "sectionId":"",
+         "sectionColor":"#f9f2ec",
+         "sectionImg":"images/enquiry.jpg",
+         "sectionProps":{
+            "heading" : "Enquiry Management:",
+            "content":"College Enquiry Management Module is intended to give particular and individualized follow-up to enquiries created by every online action. Every student and parent connects through the Enquiry Management Module are traced, kept and used at key focuses in the enlistment or admission registration process."
+         },
+         "key":[
+              "Centralized Administration that makes a streamlined module with one single purpose of contact for all students’ enthusiasm all through ",
+              "Flexibility of Message through customized and provoke follow-up to all enquiries in local dialect, guaranteeing that there is one reliable and powerful voice of the organization ",
+              "Maximized Maintenance to close the distance between web-based interest and on-the-ground advising ",
+              "Expert Structure for appropriate reactions to all enquiries, as an administration from one of the pioneers in the college ",
+              "Data Gathering that gives comprehension of the organization’s particular business sector – an important apparatus for those looking towards a future "
+         
+           ]
+      },
+      {  
+         "sectionHeading":"Alumni Management",
+         "id":"Alumni Management",
+         "sectionId":"",
+         "sectionColor":"#ffe6e6",
+         "sectionImg":"images/alumni.jpg",
+         "sectionProps":{
+            "heading" : "Alumni Management:",
+            "content": "Our Alumni management software helps establishments deliberately construct and deal with their Alumni system, by encouraging engagement, group building, systems administration, correspondences and feedback. With our graduated class administration framework, your Alumni information can be unified and joined with a large group of front-end part modules and back-end organization tools."
+            },
+            "key":[
+                  "Easiest way to stay connected with your alumni. ",
+                  "Create the whole alumni database with a simple mouse click, or facility to sign up alumni by themselves. ",
+                  "Keep up an archive of individual and details of your alumni. ",
+                  " Urge Alumni to work together and draw in by means of energizing tools, for example, exchange discussion, photograph sharing. ",
+                  " High gains and high interactions between alumni and students. ",
+                  "Encourage the posting and sharing of openings for work, Placement details and all the updates regarding employments. ",
+                  " Give current students a chance to connect with Alumni on activities or engagements. "
+               ]
+         
+      }
+
+
+   ]
+}

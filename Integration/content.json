@@ -1,0 +1,329 @@
+{  
+   "url":"http://www.freniz.com",
+ 
+   "sections":[  
+      {  
+         "sectionHeading":"Integration",
+         "id":"id",
+         "sectionType":"text",
+         "sectionTmplate":"",
+         "sectionProps":{
+            "heading":"Integration Form",
+            "form":{
+               "action":"action to be confirmed",
+               "fields":[{
+          "type": "Id",
+          "value":"",
+          "props": {
+            "label": "ID",
+            "dataName": "ID",
+            "labelPosition": "alignLeft",
+            "defaultValue": null,
+            "helpText": null,
+            "hidden": null,
+            "readOnly": null,
+            "summaryField": null,
+            "displayName": true,
+            "outerClass": null,
+            "labelClass": null,
+            "inputClass": null,
+            "outputFormat": "normal",
+            "currencyPrefix": null,
+            "width": null,
+            "placeholder":"First Name",
+            "lengthCount": null,
+            "hideWhenBlank": null,
+            "style":"bold"
+          },
+         "validation":{
+          "rules":{"mandatory":"please fill the field"},
+          "validationRequired":true,
+          "validationErrorFlag":false,
+          "validationErrorMsg":null
+      },
+          "conditionInputs": [],
+          "id": "AF-Field-99eb1b7f-ff66-45c4-99de-efb88734ffdb"
+        },
+        {
+          "type": "Name",
+          "value":"",
+          "props": {
+            "label": "Name",
+            "dataName": "Name",
+            "labelPosition": "alignRight",
+            "defaultValue": null,
+            "helpText": null,
+            "hidden": null,
+            "readOnly": null,
+            "summaryField": null,
+            "displayName": true,
+            "outerClass": null,
+            "labelClass": null,
+            "inputClass": null,
+            "outputFormat": "normal",
+            "currencyPrefix": null,
+            "width": null,
+            "placeholder":"First Name",
+            "lengthCount": null,
+            "hideWhenBlank": null,
+            "style":"bold"
+          },
+         "validation":{
+          "rules":{"mandatory":"please fill the field"},
+          "validationRequired":true,
+          "validationErrorFlag":false,
+          "validationErrorMsg":null
+      },
+          "conditionInputs": [],
+          "id": "AF-Field-99eb1b7f-ff66-45c4-99de-efb88734ffdb"
+        },
+        {
+          "type": "Category",
+          "value":"",
+          "props": {
+            "label": "Category",
+            "dataName": "Category",
+            "labelPosition": "alignRight",
+            "defaultValue": null,
+            "helpText": null,
+            "hidden": null,
+            "readOnly": null,
+            "summaryField": null,
+            "displayName": true,
+            "outerClass": null,
+            "labelClass": null,
+            "inputClass": null,
+            "outputFormat": "normal",
+            "currencyPrefix": null,
+            "width": null,
+            "placeholder":"First Name",
+            "lengthCount": null,
+            "hideWhenBlank": null,
+            "style":"bold"
+          },
+         "validation":{
+          "rules":{"mandatory":"please fill the field"},
+          "validationRequired":true,
+          "validationErrorFlag":false,
+          "validationErrorMsg":null
+      },
+          "conditionInputs": [],
+          "id": "AF-Field-99eb1b7f-ff66-45c4-99de-efb88734ffdb"
+        },
+        {
+          "type": "Type",
+          "value":"",
+          "props": {
+            "label": "Type",
+            "dataName": "Type",
+            "labelPosition": "alignRight",
+            "defaultValue": null,
+            "helpText": null,
+            "hidden": null,
+            "readOnly": null,
+            "summaryField": null,
+            "displayName": true,
+            "outerClass": null,
+            "labelClass": null,
+            "inputClass": null,
+            "outputFormat": "normal",
+            "currencyPrefix": null,
+            "width": null,
+            "placeholder":"First Name",
+            "lengthCount": null,
+            "hideWhenBlank": null,
+            "style":"bold"
+          },
+         "validation":{
+          "rules":{"mandatory":"please fill the field"},
+          "validationRequired":true,
+          "validationErrorFlag":false,
+          "validationErrorMsg":null
+      },
+          "conditionInputs": [],
+          "id": "AF-Field-99eb1b7f-ff66-45c4-99de-efb88734ffdb"
+        },
+        {
+          "type": "radio",
+          "value": "",
+          "props": {
+            "label": "",
+            "dataName": "inte_type",
+            "readOnly": "",
+            "hidden": "",
+            "placeholder": "",
+            "listOfValues": [
+              {
+                "label": "Email",
+                "value": "Email",
+                "for":"radio1",
+                "id":"radio1"
+              },
+              {
+                "label": "Datebase",
+                "value": "Datebase",
+                "for":"radio2",
+                "id":"radio2"
+              },
+              {
+                "label": "Http",
+                "value": "Http",
+                "for":"radio3",
+                "id":"radio3"
+              },
+              {
+                "label": "File",
+                "value": "File",
+                "for":"radio4",
+                "id":"radio4"
+              },
+              {
+                "label": "Webservice",
+                "value": "Webservice",
+                "for":"radio5",
+                "id":"radio5"
+              },
+              {
+                "label": "Payment",
+                "value": "Payment",
+                "for":"radio6",
+                "id":"radio6"
+              },
+              {
+                "label": "Printable",
+                "value": "Printable",
+                "for":"radio5",
+                "id":"radio5"
+              },
+              {
+                "label": "Escalation",
+                "value": "Escalation",
+                "for":"radio7",
+                "id":"radio7"
+              },
+              {
+                "label": "Profile",
+                "value": "Profile",
+                "for":"radio8",
+                "id":"radio8"
+              },
+              {
+                "label": "Permission",
+                "value": "Permission",
+                "for":"radio9",
+                "id":"radio9"
+              },
+              {
+                "label": "Case",
+                "value": "Case",
+                "for":"radio10",
+                "id":"radio10"
+              }
+            ]
+          },
+          "validation": {
+            "rules": {},
+            "validationRequired": false,
+            "validationErrorFlag": false,
+            "ValidationErrorMsg": ""
+          }
+        },
+        {
+          "type": "OutputTemplate",
+          "value":"",
+          "props": {
+            "label": "OutputTemplate",
+            "dataName": "OutputTemplate",
+            "labelPosition": "alignRight",
+            "defaultValue": null,
+            "helpText": null,
+            "hidden": null,
+            "readOnly": null,
+            "summaryField": null,
+            "displayName": true,
+            "outerClass": null,
+            "labelClass": null,
+            "inputClass": null,
+            "outputFormat": "normal",
+            "currencyPrefix": null,
+            "width": null,
+            "placeholder":"First Name",
+            "lengthCount": null,
+            "hideWhenBlank": null,
+            "style":"bold"
+          },
+         "validation":{
+          "rules":{"mandatory":"please fill the field"},
+          "validationRequired":true,
+          "validationErrorFlag":false,
+          "validationErrorMsg":null
+      },
+          "conditionInputs": [],
+          "id": "AF-Field-99eb1b7f-ff66-45c4-99de-efb88734ffdb"
+        },
+        {
+          "type": "errorNotification",
+          "value":"",
+          "props": {
+            "label": "errorNotification",
+            "dataName": "errorNotification",
+            "labelPosition": "alignRight",
+            "defaultValue": null,
+            "helpText": null,
+            "hidden": null,
+            "readOnly": null,
+            "summaryField": null,
+            "displayName": true,
+            "outerClass": null,
+            "labelClass": null,
+            "inputClass": null,
+            "outputFormat": "normal",
+            "currencyPrefix": null,
+            "width": null,
+            "placeholder":"First Name",
+            "lengthCount": null,
+            "hideWhenBlank": null,
+            "style":"bold"
+          },
+         "validation":{
+          "rules":{"mandatory":"please fill the field"},
+          "validationRequired":true,
+          "validationErrorFlag":false,
+          "validationErrorMsg":null
+      },
+          "conditionInputs": [],
+          "id": "AF-Field-99eb1b7f-ff66-45c4-99de-efb88734ffdb"
+        },
+        {
+          "type": "submit",
+          "props": {
+            "label": "Submit",
+            "dataName": "button1",
+            "labelPosition": "alignLeft",
+            "helpText": null,
+            "lookup": null,
+            "noResultsMessage": null,
+            "action": null,
+            "displayName": true,
+            "outerClass": null,
+            "labelClass": null,
+            "inputClass": null,
+            "width": null,
+            "buttonText": "Lookup",
+            "displayCondition": null
+          },
+          "validation":{
+          "rules":[],
+          "validationRequired":false,
+          "validationErrorFlag":false,
+          "validationErrorMsg":null
+      },
+          "conditionInputs": [],
+          "id": "AF-Field-5cf62390-70b3-43de-9cd8-96347ff3ee06"
+        }
+        ]
+    }
+         } 
+      }
+   ]
+}

@@ -1,0 +1,192 @@
+{  
+   "url":"http://www.freniz.com",
+ 
+   "sections":[  
+      {  
+         "sectionHeading":"Home",
+         "id":"home",
+         "sectionType":"slider",
+         "slides":[{  
+            "imgUrl":"images/freniz-slide-1.png"
+         },
+         {  
+            "imgUrl":"images/freniz-slide-2.jpg"
+         },
+         {  
+            "imgUrl":"images/freniz-slide-3.jpg"
+         }]
+      },
+      {  
+         "sectionHeading":"AboutUs",
+         "id":"aboutUs",
+         "sectionId":"",
+         "sectionType":"text",
+         "sectionTmplate":"",
+         "sectionProps":{
+            "heading" : "Freniz Software Solutions",
+            "content":"Freniz software solutions design, develop and integrate web based products and customised software solutions for Education industry verticals to best suit their requirements. Freniz software solutions is driven by a vision to provide the best of the technologies to our clients and the world. Our mission is to design and develop outstanding websites and software solutions for all Education system best in India . We have the experience in converging developments and high quality web designs, ensuring a balance between innovation and amazing designs. Freniz software solutions is located in Chennai, India. We cater to the needs of Universities, Schools, colleges clients in India only. We strive to bring your ideas to their maximum potential. Our core services include Software Development, Web Designing & Development and Android Application Development."
+         }
+      },
+      {  
+         "sectionHeading":"Careers",
+         "id":"careers",
+         "sectionId":"",
+         "sectionType":"text",
+         "sectionTmplate":"",
+         "sectionProps":{
+            "heading" : "Careers",
+            "content":"Freniz software solutions design, develop and integrate web based products and customised software solutions for Education industry verticals to best suit their requirements. Freniz software solutions is driven by a vision to provide the best of the technologies to our clients and the world. Our mission is to design and develop outstanding websites and software solutions for all Education system best in India . We have the experience in converging developments and high quality web designs, ensuring a balance between innovation and amazing designs. Freniz software solutions is located in Chennai, India. We cater to the needs of Universities, Schools, colleges clients in India only. We strive to bring your ideas to their maximum potential. Our core services include Software Development, Web Designing & Development and Android Application Development.",
+            "jobs":[{
+              "type":"text",
+              "jobTitle":"PHP Developer",
+              "jobDescription":"experienced person only"
+              
+            }
+          ]
+      }
+    },
+      {  
+         "sectionHeading":"ContactUs",
+         "id":"contactUs",
+         "imgUrl":"images/Freniz-Map.png", 
+         "sectionType":"text",
+         "sectionTmplate":"",
+         "sectionProps":{
+            "heading":"Get in Touch with US",
+            "address":"No. 144/1, 6th Floor, Nungambakkam High Road, Nungambakkam Chennai - 600034",
+            "phone":"+91 44 4210 5401",
+            "email":"support@freniz.com",
+            "form":{
+               "action":"action to be confirmed",
+               "fields":[{
+          "type": "text",
+          "value":"",
+          "props": {
+            "label": "First Name",
+            "dataName": "first_name",
+            "labelPosition": "alignLeft",
+            "defaultValue": null,
+            "helpText": null,
+            "hidden": null,
+            "readOnly": null,
+            "summaryField": null,
+            "displayName": true,
+            "outerClass": null,
+            "labelClass": null,
+            "inputClass": null,
+            "outputFormat": "normal",
+            "currencyPrefix": null,
+            "width": null,
+            "placeholder":"First Name",
+            "lengthCount": null,
+            "hideWhenBlank": null,
+            "style":"bold"
+          },
+         "validation":{
+          "rules":{"mandatory":"please fill the field"},
+          "validationRequired":true,
+          "validationErrorFlag":false,
+          "validationErrorMsg":null
+      },
+          "conditionInputs": [],
+          "id": "AF-Field-99eb1b7f-ff66-45c4-99de-efb88734ffdb"
+        },
+        {
+          "type": "email",
+          "value":"",
+          "props": {
+            "label": "Email",
+            "dataName": "email",
+            "labelPosition": "alignRight",
+            "defaultValue": null,
+            "helpText": null,
+            "hidden": null,
+            "readOnly": null,
+            "summaryField": null,
+            "displayName": true,
+            "outerClass": null,
+            "labelClass": null,
+            "inputClass": null,
+            "outputFormat": "normal",
+            "currencyPrefix": null,
+            "width": null,
+            "placeholder":"First Name",
+            "lengthCount": null,
+            "hideWhenBlank": null,
+            "style":"bold"
+          },
+         "validation":{
+          "rules":{"mandatory":"please fill the field"},
+          "validationRequired":true,
+          "validationErrorFlag":false,
+          "validationErrorMsg":null
+      },
+          "conditionInputs": [],
+          "id": "AF-Field-99eb1b7f-ff66-45c4-99de-efb88734ffdb"
+        },
+        {
+          "type": "textarea",
+          "value":"",
+          "props": {
+            "label": "Message",
+            "dataName": "Message",
+            "labelPosition": "alignRight",
+            "defaultValue": null,
+            "helpText": null,
+            "hidden": null,
+            "readOnly": null,
+            "summaryField": null,
+            "displayName": true,
+            "outerClass": null,
+            "labelClass": null,
+            "inputClass": null,
+            "outputFormat": "normal",
+            "currencyPrefix": null,
+            "width": null,
+            "placeholder":"First Name",
+            "lengthCount": null,
+            "hideWhenBlank": null,
+            "style":"bold"
+          },
+         "validation":{
+          "rules":{"mandatory":"please fill the field"},
+          "validationRequired":true,
+          "validationErrorFlag":false,
+          "validationErrorMsg":null
+      },
+          "conditionInputs": [],
+          "id": "AF-Field-99eb1b7f-ff66-45c4-99de-efb88734ffdb"
+        },
+        {
+          "type": "submit",
+          "props": {
+            "label": "Submit",
+            "dataName": "button1",
+            "labelPosition": "alignLeft",
+            "helpText": null,
+            "lookup": null,
+            "noResultsMessage": null,
+            "action": null,
+            "displayName": true,
+            "outerClass": null,
+            "labelClass": null,
+            "inputClass": null,
+            "width": null,
+            "buttonText": "Lookup",
+            "displayCondition": null
+          },
+          "validation":{
+          "rules":[],
+          "validationRequired":false,
+          "validationErrorFlag":false,
+          "validationErrorMsg":null
+      },
+          "conditionInputs": [],
+          "id": "AF-Field-5cf62390-70b3-43de-9cd8-96347ff3ee06"
+        }
+        ]
+    }
+         } 
+      }
+   ]
+}
