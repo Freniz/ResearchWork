@@ -33,6 +33,7 @@
          {
          "id":"aboutUs",
          "menuHeading":"Header",
+         "url":"header.html",
          "menuType":"text",
          "iconClass":"fa fa-header",
          "message":"9"
@@ -40,24 +41,28 @@
          {
          "id":"aboutUs",
          "menuHeading":"Footer",
+         "url":"footer.html",
          "menuType":"text",
          "iconClass":"fa fa-gears"
          },
           {
          "id":"aboutUs",
          "menuHeading":"Widgets",
+         "url":"addWidgets.html",
          "menuType":"text",
          "iconClass":"fa fa-th"
          },
          {
          "id":"aboutUs",
          "menuHeading":"Apps",
+         "url":"addApp.html",
          "menuType":"text",
          "iconClass":"fa fa-gears"
          },
          {
          "id":"aboutUs",
          "menuHeading":"tabs",
+         "url":"",
          "menuType":"text",
          "iconClass":"fa fa-gears"
          },

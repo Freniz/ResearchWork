@@ -114,7 +114,7 @@
                 </div>
               </div> <!-- Modal-->
 
-              <li class="dropdown fa fa-cogs">
+             <!--  <li class="dropdown fa fa-cogs">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                   <span class="caret vert-sep"></span>
                 </a>
@@ -122,12 +122,23 @@
                   <li><a href="dashboard.html"><i class="fa fa-eye" aria-hidden="true"> view</i></a></li>
                   <li><a href="dashboard.html"><i class="fa fa-cog" aria-hidden="true"> Settings</i></a></li>
                 </ul>
-              </li>
-
-            </div> <!--col end-->
+              </li> -->
+              
+                      <ul class="nav navbar-nav col-md-9 col-sm-6 pull-right">
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-cogs pull-right"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="dashboard.html"><i class="fa fa-eye" aria-hidden="true"> view</i></a></li>
+                          <li><a href="dashboard.html"><i class="fa fa-cog" aria-hidden="true"> Settings</i></a></li>
+                        </ul>
+                      </li>
+                    </ul>
+              </div>
+            
 
             <div class="container" style="border-bottom: 1px solid #d2d6de;">
-              <hr> </div>
+              <hr> 
+            </div>
             <div class="panel-footer hidden">
               <button class="btn btn-danger action-destroy">Destroy instances</button>
               <button class="btn btn-default action-create">Create instances</button>
@@ -150,6 +161,8 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="dist/js/angular.js"></script>
     <script type="text/javascript" src="dist/js/menu_script.js"></script>
+
+    <script type="text/javascript" src="dist/js/sortable.js"></script>
     <!-- Morris.js charts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
     <script src="plugins/morris/morris.min.js"></script>
