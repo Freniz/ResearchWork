@@ -76,14 +76,20 @@
          "menuType":"text",
          "menuHeading":"User",
          "image":"dist/img/user2-160x160.jpg",
-         "headerClass":"user-header",
-         "footerClass":"user-footer",
          "subMenus":[{
-          "id":"aboutUs-profile",
+          "id":"profile",
+          "headerClass":"user-header",
           "url":"",
-          "image":"dist/img/user2-160x160.jpg",
-          "icon":""
-         }
+          "imageSrc":"dist/img/user2-160x160.jpg",
+          "icon":"",
+          "designation":"Administrator"  
+        },
+        {
+          "footerClass":"user-footer",
+          "profile":"Profile",
+          "url":"profile.html",
+          "signout":"Signout"
+        }
        ]     
       }
        ]
