@@ -18,14 +18,14 @@ gulp.task('js', function(){
 });
 
 gulp.task('cssmin', function(){
-   gulp.src(['bootstrap/css/bootstrap.min.css','build/fontawesome/css/font-awesome.css','dist/css/AdminLTE.css','css/style.css','dist/css/skins/_all-skins.min.css'])
+   gulp.src(['bootstrap/css/bootstrap.css','build/fontawesome/css/font-awesome.css','dist/css/AdminLTE.css','bootstrap/css/bootstrap.css','dist/css/skins/_all-skins.css'])
    .pipe(concat('freniz.styles.min.css'))
    .pipe(minify())
    .pipe(gulp.dest('css/'));
 });
 
 gulp.task('css', function(){
-   gulp.src(['bootstrap/css/bootstrap.min.css','build/fontawesome/css/font-awesome.css','dist/css/AdminLTE.css','css/style.css','dist/css/skins/_all-skins.min.css'])
+   gulp.src(['bootstrap/css/bootstrap.css','build/fontawesome/css/font-awesome.css','dist/css/AdminLTE.css','dist/css/skins/_all-skins.css'])
    .pipe(concat('freniz.styles.css'))
    .pipe(gulp.dest('css/'));
 });
