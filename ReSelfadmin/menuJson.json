@@ -1,78 +1,55 @@
-[  
-   
-     
+[   
       {
        
          "id":"aboutUs",
-         "menuHeading":"Dashboard",
          "menuType":"text",
-         "iconClass":"fa fa-dashboard",
+         "iconClass":"fa fa-bell-o",
+         "Heading":"Departments",
          "message":"10",
-         "iClass":"caret pull-right",
          "subMenus":[{
           "id":"aboutUs-profile",
           "url":"",
           "menuHeading":"Profile",
           "icon":"",
-          "iconClass":"fa fa-circle-o"
+          "iconClass":"fa fa-user text-aqua",
+          "iClass":"fa fa-angle-left",
+          "subMenus":[{
+            "menuHeading":"secondlevel",
+            "iconClass":"fa fa-circle-o",
+            "iClass":"fa fa-angle-left",
+          "subMenus":[{
+            "menuHeading":"Thirdlevel",
+            "iconClass":"fa fa-circle-o"
+            }]
+          }]
          },
          {
           "id":"aboutUs-settings",
           "url":"",
           "menuHeading":"Settings",
-          "iconClass":"fa fa-circle-o"
+          "iconClass":"fa fa-cog text-green"
          },
          {
           "id":"",
           "url":"",
           "menuHeading":"Logout",
-          "iconClass":"fa fa-circle-o"
+          "iconClass":"fa fa-times text-red"
          }
        ] 
          },
          {
          "id":"aboutUs",
-         "menuHeading":"Header",
-         "url":"header.html",
          "menuType":"text",
-         "iconClass":"fa fa-header",
+         "iconClass":"fa fa-flag-o",
+         "Heading":"Staff",
          "message":"9"
          },
-         {
+         {  
          "id":"aboutUs",
-         "menuHeading":"Footer",
-         "url":"footer.html",
-         "menuType":"text",
-         "iconClass":"fa fa-gears"
-         },
-          {
-         "id":"aboutUs",
-         "menuHeading":"Widgets",
-         "url":"addWidgets.html",
-         "menuType":"text",
-         "iconClass":"fa fa-th"
-         },
-         {
-         "id":"aboutUs",
-         "menuHeading":"Apps",
-         "url":"addApp.html",
-         "menuType":"text",
-         "iconClass":"fa fa-gears"
-         },
-         {
-         "id":"aboutUs",
-         "menuHeading":"tabs",
-         "url":"",
-         "menuType":"text",
-         "iconClass":"fa fa-gears"
-         },
-          {  
-         "id":"aboutUs",
-         "menuHeading":"Mails",
          "menuType":"text",
          "iconClass":"fa fa-envelope-o",
+         "Heading":"Add New",
          "message":"4",
-         "iClass":"caret pull-right",
          "subMenus":[{
           "id":"aboutUs-profile",
           "url":"",
@@ -91,6 +68,21 @@
           "url":"",
           "menuHeading":"Logout",
           "iconClass":"fa fa-times text-red"
+         }
+       ]     
+      },
+      {  
+         "id":"aboutUs",
+         "menuType":"text",
+         "menuHeading":"User",
+         "image":"dist/img/user2-160x160.jpg",
+         "headerClass":"user-header",
+         "footerClass":"user-footer",
+         "subMenus":[{
+          "id":"aboutUs-profile",
+          "url":"",
+          "image":"dist/img/user2-160x160.jpg",
+          "icon":""
          }
        ]     
       }
