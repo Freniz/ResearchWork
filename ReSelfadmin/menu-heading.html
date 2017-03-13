@@ -1,8 +1,8 @@
 <ul>
 
-        <li  ng-repeat="menu in menus" ng-init="menu.isOpened = false" ng-class="{'freniz-dropdown-menu':menu.subMenus, 'open':menu.isOpened}" class="{{menu.headerClass?'user-header':'dropdown'}}">
-          <a href="{{(menu.subMenus?'#':menu.url)}}"  ng-click="open(menu)" role="button" ><i class="{{menu.iconClass}}"></i><span class="label label-success">{{menu.message}}</span><img src="{{menu.image}}" class="{{(menu.image?'user-image':'')}}">{{menu.menuHeading}}<span class="pull-right"><i class="{{menu.iClass}}"></i></span></a></span>
-            <menu-heading menus="menu.subMenus" class="{{menu.image?'dropdown-menu':''}}"></menu-heading>
+        <li class="dropdown" ng-repeat="menu in menus" ng-init="menu.isOpened = false" ng-class="{'freniz-dropdown-menu':menu.subMenus, 'open':menu.isOpened}">
+          <a href="{{(menu.subMenus?'#':menu.url)}}"  ng-click="open(menu)" role="button"  ><i class="{{menu.iconClass}}"></i><span class="label label-success">{{menu.message}}</span><img src="{{menu.image}}" class="{{(menu.image?'user-image':'')}}">{{menu.menuHeading}}<span class="pull-right"><i class="{{menu.iClass}}"></i></span></a></span>
+            <menu-heading menus="menu.subMenus" class="{{menu.headerClass?'user-header':''}}" class="{{menu.image?'dropdown-menu':''}}"></menu-heading>
        
         </li>
      </ul>
