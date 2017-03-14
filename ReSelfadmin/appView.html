@@ -8,15 +8,14 @@
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
   <!-- Minified css file -->
-<!--   <link rel="stylesheet" href="css/freniz.styles.css"> -->
+  <link rel="stylesheet" href="css/freniz.styles.css">
 
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" href="build/fontawesome/css/font-awesome.css">
+
+<!--   <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="build/fontawesome/css/font-awesome.css"> -->
   <!-- main css -->
-  <link rel="stylesheet" href="dist/css/AdminLTE.css">
-  <link rel="stylesheet" href="dist/css/skins/_all-skins.css">
-  <link rel="stylesheet" href="plugins/colorpicker/bootstrap-colorpicker.min.css">
-  <link rel="stylesheet" href="plugins/colorpicker/fontawesome-iconpicker.min.css">
+<!--   <link rel="stylesheet" href="dist/css/AdminLTE.css">
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.css"> -->
 
   
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -27,7 +26,7 @@
   <![endif]-->
 </head>
 <body class="hold-transition skin-blue sidebar-mini" ng-app="menuList">
-<div class="wrapper" ng-controller="myctrl">
+<div class="wrapper">
 
   <header class="main-header">
     <!-- Logo -->
@@ -281,7 +280,7 @@
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
       <!-- Sidebar user panel -->
-        <div>
+        <div ng-controller="myctrl">
           <ul class="sidebar-menu">
               <li class="header">MAIN NAVIGATION</li>
               <sidemenu-headings sidemenus="sidemenus" ismainmenu="'true'" >
@@ -292,6 +291,12 @@
               <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
               <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
               <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+              <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>  
+              <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
+              <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
+              <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+              <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
+
           </ul>
         </div>
     </section>
@@ -302,134 +307,136 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1>
-        Apps
-        <small>Preview Page</small>
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Apps</li>
-      </ol>
+        <h1>
+          Apps
+          <small>Preview Page</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a>
+            </li>
+            <li class="active">Apps</li>
+        </ol>
     </section>
 
-    <!-- Main content -->
-            <section class="content">
-            <!-- container start -->
-              <div class="container">
-                  <!-- row start -->
-                  <div class="row">
-                      <!-- col start -->
-                      <div class="col-sm-6 col-md-3 col-xs-4 pull-right">
-                        <div class="row">                   
-                          <div class="col-md-3 col-sm-3 col-xs-8">
-                            <button onclick="colorpicker()" data-toggle="modal" data-target="#myModal" class="btn btn-success">Add <span class="fa fa-plus"></span>
-                            </button>
-                          </div>
-
-                          <div class="col-md-4 col-sm-6 col-xs-3">
-                            <div class="dropdown">
-                              <i class="fa fa-cog dropdown-toggle" type="button" data-toggle="dropdown">
-                              </i>
-                              <ul class="dropdown-menu">
-                                <li><a href="dashboard.html"><i class="fa fa-eye" aria-hidden="true"> view</i></a></li>
-                                <li><a href="dashboard.html"><i class="fa fa-cog" aria-hidden="true"> Settings</i></a></li>
-                              </ul>
-                            </div>
-                                
-                          </div>
-
-                        </div>
-                      </div>
-                                                                 
-                          <!-- model start -->
-                          <div class="modal fade" id="myModal" role="dialog">
-                              <div class="modal-dialog">
-                                  <!-- Modal content-->
-                                  <div class="modal-content">
-                                      <div class="modal-header">
-                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                          <h4 class="modal-title">Add Details</h4>
-                                      </div>
-                                      <!-- model body start -->
-                                      <div class="modal-body">
-                                          <form class="form-horizontal">
-                                              <div class="form-group" ng-repeat="app in apps">
-                                                  <label class="col-sm-4 ">{{app.lable}}</label>
-                                                  <div class="col-sm-6">
-                                                      <input type="text" ng-if="app.lable=='Name'" class="form-control" id="pid">
-                                                  </div>
-
-                                                  <div class="col-sm-6">
-                                                      <textarea class="form-control" rows="3" ng-if="app.lable=='Description'"></textarea>
-                                                  </div>
-                                                  <div class=" col-sm-6 input-group my-colorpicker2" ng-if="app.lable=='Pick Color'">
-                                                      <input type="text" class="form-control">
-                                                      <div class="input-group-addon"> <i></i> </div>
-                                                  </div>
-
-                                                  <div class="input-group col-sm-6 " ng-if="app.lable=='Pick Icon'">
-                                                      <input data-placement="bottomRight" class="form-control icp icp-auto" value="fa-archive" type="text" /> <span class="input-group-addon"></span>
-                                                  </div>
-                                          </form>
-                                          <!-- form end -->
-                                        </div>
-                                          <!-- model body end -->
-                                      </div>
-                                      <!-- model content -->
-
-                                      <!-- footer start -->
-                                      <div class="modal-footer">
-                                          <button type="submit" class="align-center btn btn-primary">Preview</button>
-                                          <button type="submit" class="align-center btn btn-info">Save</button>
-                                      </div>
-                                      <!-- model footer end -->
-                                  </div>
-                                  <!-- end Modal dialog-->
-                              </div>
-                              <!-- Modal end-->
-                          
-                          <!-- col end -->
-                          
-                      </div>
-                      <!-- row end -->
-                      <div class="container" style="border-bottom: 1px solid #d2d6de;">
-                          <hr>
-                      </div>
-                      <div class="panel-footer hidden">
-                          <button class="btn btn-danger action-destroy">Destroy instances</button>
-                          <button class="btn btn-default action-create">Create instances</button>
-                      </div>
-                  </div>
-                </div>
-                  <!-- container end -->
+    <!-- add button row start -->
+          <div class="row">
+              <!-- col start -->
+                <div class="col-sm-6 col-md-3 col-xs-4 pull-right">
                 <!-- row start -->
-                 <div class="row" style="margin-top:10px;">
-                      <div class="col-md-3 col-sm-6 col-xs-12" ng-repeat="app in apps">
-                          <div class="info-box {{app.bgColor}}">
-                            <span class="info-box-icon"><i class="{{app.iconClass}}"></i></span>
-                              <div class="info-box-content">
-                                <span class="info-box-text">{{app.value}}</span>
-                                <span class="info-box-text"></span>
-                                <div class="progress">
-                                  <div class="progress-bar"></div>
-                                </div>
-                                    <span class="progress-description">
-                                      {{app.Description}}
-                                    </span>
-                            </div>
-                            <!-- /.info-box-content -->
-                          </div>
-                          <!-- /.info-box -->
+                    <div class="row"> 
+
+                      <div class="col-md-3 col-sm-3 col-xs-8">
+                        <button onclick="colorpicker()" data-toggle="modal" data-target="#myModal" class="btn btn-success">Add <span class="fa fa-plus"></span>
+                        </button>
                       </div>
+                      <!-- dropdown start -->
+                      <div class="col-md-4 col-sm-6 col-xs-3">
+                        <div class="dropdown">
+                          <i class="fa fa-cog dropdown-toggle" type="button" data-toggle="dropdown">
+                          </i>
+                          <ul class="dropdown-menu">
+                            <li><a href="dashboard.html"><i class="fa fa-eye" aria-hidden="true"> view</i></a></li>
+                            <li><a href="dashboard.html"><i class="fa fa-cog" aria-hidden="true"> Settings</i></a></li>
+                          </ul>
+                        </div>  
+                      </div>
+                      <!-- dropdown end -->
+                    </div>
+                    <!-- row end -->
+              </div>
+              <!-- col end -->
+         </div>
+         <!-- row end -->
+         <!-- model start -->
+          <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Add Details</h4>
+                      </div>
+                      <!-- model body start -->
+                      <div class="modal-body">
+                          <form class="form-horizontal" ng-controller="myctrl">
+                              <div class="form-group" ng-repeat="app in apps">
+                                  <label class="col-sm-4 ">{{app.lable}}</label>
+                                  <div class="col-sm-6">
+                                      <input type="text" ng-if="app.lable=='Name'" class="form-control" id="pid">
+                                  </div>
+
+                                  <div class="col-sm-6">
+                                      <textarea class="form-control" rows="3" ng-if="app.lable=='Description'"></textarea>
+                                  </div>
+                                  <div class=" col-sm-6 input-group my-colorpicker2" ng-if="app.lable=='Pick Color'">
+                                      <input type="text" class="form-control">
+                                      <div class="input-group-addon"> <i></i> </div>
+                                  </div>
+
+                                  <div class="input-group col-sm-6 " ng-if="app.lable=='Pick Icon'">
+                                      <input data-placement="bottomRight" class="form-control icp icp-auto" value="fa-archive" type="text" /> <span class="input-group-addon"></span>
+                                  </div>
+                                  <div class="col-sm-6">
+                                    <select class="form-control " ng-if="app.lable=='Select Form'" type="select">
+                                          <option value="">--Select User--</option>
+                                          <option ng-repeat="app in apps.listOfValues" value="{{app.value}}">{{app.label}}</option>
+                                   </select>
+                                  </div>
+                                </div>
+                          </form>
+                          <!-- form end -->   
+                      </div>
+                      <!-- model body -->
+
+                      <!-- footer start -->
+                      <div class="modal-footer">
+                          <button type="submit" class="align-center btn btn-primary">Preview</button>
+                          <button type="submit" class="align-center btn btn-info">Save</button>
+                      </div>
+                      <!-- model footer end -->
+                </div>
+                    <!-- model content end -->
+            </div>
+                  <!-- end Modal dialog-->
+        </div>
+            <!-- Modal end-->
+      <div class="container" style="border-bottom: 1px solid #d2d6de;">
+          <hr>
+      </div>
+      <div class="panel-footer hidden">
+          <button class="btn btn-danger action-destroy">Destroy instances</button>
+          <button class="btn btn-default action-create">Create instances</button>
+      </div>
+
+      <!-- widget section start -->
+      <section class="content">
+        <div class="row" ng-controller="myctrl" style="margin-top:10px;">
+              <div class="col-md-3 col-sm-6 col-xs-12" ng-repeat="app in apps">
+                  <div class="info-box {{app.bgColor}}">
+                    <span class="info-box-icon"><i class="{{app.iconClass}}"></i></span>
+                      <div class="info-box-content">
+                        <span class="info-box-text">{{app.value}}</span>
+                        <span class="info-box-text"></span>
+                        <div class="progress">
+                          <div class="progress-bar"></div>
+                        </div>
+                        <span class="progress-description">
+                          {{app.Description}}
+                        </span>
+                    </div>
+                    <!-- /.info-box-content -->
                   </div>
-            <!-- /.row -->  
-    </section>
-    <!-- /.content -->
+                  <!-- /.info-box -->
+              </div>
+        </div>
+        <!-- /.row -->
+      </section>
+      <!-- widget section end -->
   </div>
   <!-- /.content-wrapper -->
 
   <footer class="main-footer">
-    <div class="pull-right">
+    <div class="pull-right ">
       <a href="http://freniz.com">Freniz</a>
     </div>
     <strong>Copyright &copy; 2017.</strong> All rights
@@ -633,20 +640,17 @@
 <!-- ./wrapper -->
 
 <!-- Minified js file -->
-<!-- <script src="js/freniz.jquery.js"></script> -->
+<script src="js/freniz.jquery.js"></script>
 
-<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="dist/js/angular.js"></script>
+<script type="text/javascript" src="dist/js/angular.js"></script> -->
 
 <!-- Main script for angular -->
-<script type="text/javascript" src="dist/js/menu_script.js"></script>
+<!-- <script type="text/javascript" src="dist/js/menu_script.js"></script>
 <script type="text/javascript" src="dist/js/app.js"></script>
-<script type="text/javascript" src="plugins/slimScroll/jquery.slimscroll.js"></script>
-<script src="plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
-<script src="plugins/colorpicker/fontawesome-iconpicker.min.js"></script>
-
-<script>
+<script type="text/javascript" src="plugins/slimScroll/jquery.slimscroll.js"></script> -->
+    <script>
         function colorpicker() {
             //Colorpicker
             $(".my-colorpicker1").colorpicker();

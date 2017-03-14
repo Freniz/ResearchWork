@@ -2,15 +2,37 @@
 	{
      "groupId":"001",
      "formId":"",
+     "type":"text",
      "lable":"Name",
      "value":"Entry",
      "Description":"Description",
      "bgColor":"bg-aqua",
      "iconClass":"fa fa-pencil-square-o"
       },
+      {
+     "groupId":"004",
+     "formId":"",
+     "type":"select",
+     "lable":"Select Form",
+     "value":"Rules",
+     "Description":"Description",
+     "bgColor":"bg-red",
+     "iconClass":"fa fa-ban",
+     "listOfValues": [
+         {
+           "label": "Yes",
+           "value": "yes"
+         },
+         {
+           "label": "No",
+           "value": "no"
+         }
+       ]
+     },
      {
      "groupId":"002",
      "formId":"",
+     "type":"textarea",
      "lable":"Description",
      "value":"Books",
      "Description":"Description",
@@ -20,6 +42,7 @@
      {
      "groupId":"003",
      "formId":"",
+     "type":"text",
      "lable":"Pick Color",
      "value":"Students",
      "Description":"Description",
@@ -29,6 +52,7 @@
      {
      "groupId":"004",
      "formId":"",
+     "type":"text",
      "lable":"Pick Icon",
      "value":"Registration",
      "Description":"Description",
