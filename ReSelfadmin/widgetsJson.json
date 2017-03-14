@@ -1,0 +1,30 @@
+[
+	{
+     "groupId":"001",
+     "name":"Alumni",
+     "Description":"",
+     "bgColor":"bg-aqua",
+     "iconClass":"fa fa-graduation-cap"
+      },
+     {
+     "groupId":"002",
+     "name":"Library",
+     "Description":"",
+     "bgColor":"bg-green",
+     "iconClass":"fa fa-book"
+     },
+     {
+     "groupId":"003",
+     "name":"Student",
+     "Description":"",
+     "bgColor":"bg-yellow",
+     "iconClass":"fa fa-user"
+     },
+     {
+     "groupId":"004",
+     "name":"Laboratory",
+     "Description":"",
+     "bgColor":"bg-red",
+     "iconClass":"fa fa-flask"
+     }
+]

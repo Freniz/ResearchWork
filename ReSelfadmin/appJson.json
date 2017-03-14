@@ -1,0 +1,30 @@
+[
+	{
+     "groupId":"001",
+     "name":"Entry",
+     "Description":"Description",
+     "bgColor":"bg-aqua",
+     "iconClass":"fa fa-pencil-square-o"
+      },
+     {
+     "groupId":"002",
+     "name":"Books",
+     "Description":"Description",
+     "bgColor":"bg-green",
+     "iconClass":"fa fa-book"
+     },
+     {
+     "groupId":"003",
+     "name":"Students",
+     "Description":"Description",
+     "bgColor":"bg-yellow",
+     "iconClass":"fa fa-user"
+     },
+     {
+     "groupId":"004",
+     "name":"Registration",
+     "Description":"Description",
+     "bgColor":"bg-red",
+     "iconClass":"fa fa-bookmark"
+     }
+]
