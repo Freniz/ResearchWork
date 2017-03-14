@@ -1,28 +1,36 @@
 [
 	{
      "groupId":"001",
-     "name":"Entry",
+     "formId":"",
+     "lable":"Name",
+     "value":"Entry",
      "Description":"Description",
      "bgColor":"bg-aqua",
      "iconClass":"fa fa-pencil-square-o"
       },
      {
      "groupId":"002",
-     "name":"Books",
+     "formId":"",
+     "lable":"Description",
+     "value":"Books",
      "Description":"Description",
      "bgColor":"bg-green",
      "iconClass":"fa fa-book"
      },
      {
      "groupId":"003",
-     "name":"Students",
+     "formId":"",
+     "lable":"Pick Color",
+     "value":"Students",
      "Description":"Description",
      "bgColor":"bg-yellow",
      "iconClass":"fa fa-user"
      },
      {
      "groupId":"004",
-     "name":"Registration",
+     "formId":"",
+     "lable":"Pick Icon",
+     "value":"Registration",
      "Description":"Description",
      "bgColor":"bg-red",
      "iconClass":"fa fa-bookmark"

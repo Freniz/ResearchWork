@@ -1,28 +1,32 @@
 [
 	{
      "groupId":"001",
-     "name":"Alumni",
+     "lable":"Name",
+     "value":"Alumni",
      "Description":"",
      "bgColor":"bg-aqua",
      "iconClass":"fa fa-graduation-cap"
       },
      {
      "groupId":"002",
-     "name":"Library",
+     "lable":"Description",
+     "value":"Library",
      "Description":"",
      "bgColor":"bg-green",
      "iconClass":"fa fa-book"
      },
      {
      "groupId":"003",
-     "name":"Student",
+     "lable":"Pick Color",
+     "value":"Student",
      "Description":"",
      "bgColor":"bg-yellow",
      "iconClass":"fa fa-user"
      },
      {
      "groupId":"004",
-     "name":"Laboratory",
+     "lable":"Pick Icon",
+     "value":"Laboratory",
      "Description":"",
      "bgColor":"bg-red",
      "iconClass":"fa fa-flask"

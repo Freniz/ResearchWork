@@ -8,13 +8,15 @@
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
   <!-- Minified css file -->
-  <link rel="stylesheet" href="css/freniz.styles.css">
+<!--   <link rel="stylesheet" href="css/freniz.styles.css"> -->
 
-<!--   <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" href="build/fontawesome/css/font-awesome.css"> -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="build/fontawesome/css/font-awesome.css">
   <!-- main css -->
-<!--   <link rel="stylesheet" href="dist/css/AdminLTE.css">
-  <link rel="stylesheet" href="dist/css/skins/_all-skins.css"> -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.css">
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.css">
+  <link rel="stylesheet" href="plugins/colorpicker/bootstrap-colorpicker.min.css">
+  <link rel="stylesheet" href="plugins/colorpicker/fontawesome-iconpicker.min.css">
 
   
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -290,7 +292,6 @@
               <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
               <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
               <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
-              <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>  
           </ul>
         </div>
     </section>
@@ -312,26 +313,115 @@
     </section>
 
     <!-- Main content -->
-    <section class="content">
-     <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-12" ng-repeat="app in apps">
-              <div class="info-box {{app.bgColor}}">
-                <span class="info-box-icon"><i class="{{app.iconClass}}"></i></span>
-                  <div class="info-box-content">
-                    <span class="info-box-text">{{app.name}}</span>
-                    <span class="info-box-text"></span>
-                    <div class="progress">
-                      <div class="progress-bar"></div>
-                    </div>
-                        <span class="progress-description">
-                          {{app.Description}}
-                        </span>
+            <section class="content">
+            <!-- container start -->
+              <div class="container">
+                  <!-- row start -->
+                  <div class="row">
+                      <!-- col start -->
+                      <div class="col-sm-6 col-md-3 col-xs-4 pull-right">
+                        <div class="row">                   
+                          <div class="col-md-3 col-sm-3 col-xs-8">
+                            <button onclick="colorpicker()" data-toggle="modal" data-target="#myModal" class="btn btn-success">Add <span class="fa fa-plus"></span>
+                            </button>
+                          </div>
+
+                          <div class="col-md-4 col-sm-6 col-xs-3">
+                            <div class="dropdown">
+                              <i class="fa fa-cog dropdown-toggle" type="button" data-toggle="dropdown">
+                              </i>
+                              <ul class="dropdown-menu">
+                                <li><a href="dashboard.html"><i class="fa fa-eye" aria-hidden="true"> view</i></a></li>
+                                <li><a href="dashboard.html"><i class="fa fa-cog" aria-hidden="true"> Settings</i></a></li>
+                              </ul>
+                            </div>
+                                
+                          </div>
+
+                        </div>
+                      </div>
+                                                                 
+                          <!-- model start -->
+                          <div class="modal fade" id="myModal" role="dialog">
+                              <div class="modal-dialog">
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          <h4 class="modal-title">Add Details</h4>
+                                      </div>
+                                      <!-- model body start -->
+                                      <div class="modal-body">
+                                          <form class="form-horizontal">
+                                              <div class="form-group" ng-repeat="app in apps">
+                                                  <label class="col-sm-4 ">{{app.lable}}</label>
+                                                  <div class="col-sm-6">
+                                                      <input type="text" ng-if="app.lable=='Name'" class="form-control" id="pid">
+                                                  </div>
+
+                                                  <div class="col-sm-6">
+                                                      <textarea class="form-control" rows="3" ng-if="app.lable=='Description'"></textarea>
+                                                  </div>
+                                                  <div class=" col-sm-6 input-group my-colorpicker2" ng-if="app.lable=='Pick Color'">
+                                                      <input type="text" class="form-control">
+                                                      <div class="input-group-addon"> <i></i> </div>
+                                                  </div>
+
+                                                  <div class="input-group col-sm-6 " ng-if="app.lable=='Pick Icon'">
+                                                      <input data-placement="bottomRight" class="form-control icp icp-auto" value="fa-archive" type="text" /> <span class="input-group-addon"></span>
+                                                  </div>
+                                          </form>
+                                          <!-- form end -->
+                                        </div>
+                                          <!-- model body end -->
+                                      </div>
+                                      <!-- model content -->
+
+                                      <!-- footer start -->
+                                      <div class="modal-footer">
+                                          <button type="submit" class="align-center btn btn-primary">Preview</button>
+                                          <button type="submit" class="align-center btn btn-info">Save</button>
+                                      </div>
+                                      <!-- model footer end -->
+                                  </div>
+                                  <!-- end Modal dialog-->
+                              </div>
+                              <!-- Modal end-->
+                          
+                          <!-- col end -->
+                          
+                      </div>
+                      <!-- row end -->
+                      <div class="container" style="border-bottom: 1px solid #d2d6de;">
+                          <hr>
+                      </div>
+                      <div class="panel-footer hidden">
+                          <button class="btn btn-danger action-destroy">Destroy instances</button>
+                          <button class="btn btn-default action-create">Create instances</button>
+                      </div>
+                  </div>
                 </div>
-                <!-- /.info-box-content -->
-              </div>
-              <!-- /.info-box -->
-          </div>
-      </div>
+                  <!-- container end -->
+                <!-- row start -->
+                 <div class="row" style="margin-top:10px;">
+                      <div class="col-md-3 col-sm-6 col-xs-12" ng-repeat="app in apps">
+                          <div class="info-box {{app.bgColor}}">
+                            <span class="info-box-icon"><i class="{{app.iconClass}}"></i></span>
+                              <div class="info-box-content">
+                                <span class="info-box-text">{{app.value}}</span>
+                                <span class="info-box-text"></span>
+                                <div class="progress">
+                                  <div class="progress-bar"></div>
+                                </div>
+                                    <span class="progress-description">
+                                      {{app.Description}}
+                                    </span>
+                            </div>
+                            <!-- /.info-box-content -->
+                          </div>
+                          <!-- /.info-box -->
+                      </div>
+                  </div>
             <!-- /.row -->  
     </section>
     <!-- /.content -->
@@ -339,7 +429,7 @@
   <!-- /.content-wrapper -->
 
   <footer class="main-footer">
-    <div class="pull-right hidden-xs">
+    <div class="pull-right">
       <a href="http://freniz.com">Freniz</a>
     </div>
     <strong>Copyright &copy; 2017.</strong> All rights
@@ -543,16 +633,92 @@
 <!-- ./wrapper -->
 
 <!-- Minified js file -->
-<script src="js/freniz.jquery.js"></script>
+<!-- <script src="js/freniz.jquery.js"></script> -->
 
-<!-- <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="dist/js/angular.js"></script> -->
+<script type="text/javascript" src="dist/js/angular.js"></script>
 
 <!-- Main script for angular -->
-<!-- <script type="text/javascript" src="dist/js/menu_script.js"></script>
+<script type="text/javascript" src="dist/js/menu_script.js"></script>
 <script type="text/javascript" src="dist/js/app.js"></script>
-<script type="text/javascript" src="plugins/slimScroll/jquery.slimscroll.js"></script> -->
+<script type="text/javascript" src="plugins/slimScroll/jquery.slimscroll.js"></script>
+<script src="plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+<script src="plugins/colorpicker/fontawesome-iconpicker.min.js"></script>
 
+<script>
+        function colorpicker() {
+            //Colorpicker
+            $(".my-colorpicker1").colorpicker();
+            //color picker with addon
+            $(".my-colorpicker2").colorpicker();
+            $('.action-destroy').on('click', function() {
+                $.iconpicker.batch('.icp.iconpicker-element', 'destroy');
+            });
+            // Live binding of buttons
+            $(document).on('click', '.action-placement', function(e) {
+                $('.action-placement').removeClass('active');
+                $(this).addClass('active');
+                $('.icp-opts').data('iconpicker').updatePlacement($(this).text());
+                e.preventDefault();
+                return false;
+            });
+            $('.action-create').on('click', function() {
+                $('.icp-auto').iconpicker();
+                $('.icp-dd').iconpicker({
+                    //title: 'Dropdown with picker',
+                    //component:'.btn > i'
+                });
+                $('.icp-glyphs').iconpicker({
+                    title: 'Prepending glypghicons',
+                    icons: $.merge(['glyphicon-home', 'glyphicon-repeat', 'glyphicon-search', 'glyphicon-arrow-left', 'glyphicon-arrow-right', 'glyphicon-star'], $.iconpicker.defaultOptions.icons),
+                    fullClassFormatter: function(val) {
+                        if (val.match(/^fa-/)) {
+                            return 'fa ' + val;
+                        } else {
+                            return 'glyphicon ' + val;
+                        }
+                    }
+                });
+                $('.icp-opts').iconpicker({
+                    title: 'With custom options',
+                    icons: ['fa-github', 'fa-heart', 'fa-html5', 'fa-css3'],
+                    selectedCustomClass: 'label label-success',
+                    mustAccept: true,
+                    placement: 'bottomRight',
+                    showFooter: true,
+                    // note that this is ignored cause we have an accept button:
+                    hideOnSelect: true,
+                    templates: {
+                        footer: '<div class="popover-footer">' + '<div style="text-align:left; font-size:12px;">Placements: \n\
+                    <a href="#" class=" action-placement">inline</a>\n\
+                    <a href="#" class=" action-placement">topLeftCorner</a>\n\
+                    <a href="#" class=" action-placement">topLeft</a>\n\
+                    <a href="#" class=" action-placement">top</a>\n\
+                    <a href="#" class=" action-placement">topRight</a>\n\
+                    <a href="#" class=" action-placement">topRightCorner</a>\n\
+                    <a href="#" class=" action-placement">rightTop</a>\n\
+                    <a href="#" class=" action-placement">right</a>\n\
+                    <a href="#" class=" action-placement">rightBottom</a>\n\
+                    <a href="#" class=" action-placement">bottomRightCorner</a>\n\
+                    <a href="#" class=" active action-placement">bottomRight</a>\n\
+                    <a href="#" class=" action-placement">bottom</a>\n\
+                    <a href="#" class=" action-placement">bottomLeft</a>\n\
+                    <a href="#" class=" action-placement">bottomLeftCorner</a>\n\
+                    <a href="#" class=" action-placement">leftBottom</a>\n\
+                    <a href="#" class=" action-placement">left</a>\n\
+                    <a href="#" class=" action-placement">leftTop</a>\n\
+                    </div><hr></div>'
+                    }
+                }).data('iconpicker').show();
+            }).trigger('click');
+            // Events sample:
+            // This event is only triggered when the actual input value is changed
+            // by user interaction
+            $('.icp').on('iconpickerSelected', function(e) {
+                $('.lead .picker-target').get(0).className = 'picker-target fa-3x ' + e.iconpickerInstance.options.iconBaseClass + ' ' + e.iconpickerInstance.options.fullClassFormatter(e.iconpickerValue);
+            });
+        }
+    </script>
 </body>
 </html>
