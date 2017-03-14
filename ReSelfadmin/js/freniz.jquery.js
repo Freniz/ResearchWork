@@ -31569,11 +31569,18 @@ app.controller('myctrl', ["$scope", "$http", function($scope, $http) {
         $scope.menus = res.data;
        
 });
-        $http.get('sidemenuJson.json').then(function(res) { 
-        $scope.sidemenus = res.data;
+    $http.get('sidemenuJson.json').then(function(res) { 
+    $scope.sidemenus = res.data;
        
 });
-
+    $http.get('widgetsJson.json').then(function(res) { 
+    $scope.widgets = res.data;
+        
+});
+    $http.get('appJson.json').then(function(res) { 
+    $scope.apps = res.data;
+        
+});
 
 }]);
 

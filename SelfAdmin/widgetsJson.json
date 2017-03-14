@@ -1,0 +1,31 @@
+[
+	{
+     "groupId":"",
+     "Name":"Cart",
+     "Description":"",
+     "color":"text",
+     "iconClass":"fa fa-header"
+      },
+     {
+     "groupId":"",
+     "Name":"Chart",
+     "Description":"",
+     "color":"text",
+     "iconClass":"fa fa-gears"
+     },
+     {
+     "groupId":"",
+     "Name":"Students",
+     "Description":"",
+     "color":"",
+     "iconClass":"fa fa-th"
+     },
+     {
+     "groupId":"",
+     "Name":"Pie Chart",
+     "Description":"",
+     "color":"",
+     "iconClass":"fa fa-th"
+     }
+
+]

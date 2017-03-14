@@ -78,12 +78,7 @@
           "url":"",
           "menuHeading":"Profile",
           "icon":"",
-          "iconClass":"fa fa-user text-aqua",
-          "iClass":"caret pull-right",
-          "subMenus":[{
-            "menuHeading":"secondlevel",
-            "iconClass":"fa fa-circle-o"
-          }]
+          "iconClass":"fa fa-user text-aqua"
          },
          {
           "id":"aboutUs-settings",
