@@ -25,7 +25,7 @@
   <![endif]-->
 </head>
 <body class="hold-transition skin-blue sidebar-mini" ng-app="menuList">
-<div class="wrapper">
+<div class="wrapper" ng-controller="myctrl">
 
   <header class="main-header">
     <!-- Logo -->
@@ -279,7 +279,7 @@
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
       <!-- Sidebar user panel -->
-        <div ng-controller="myctrl">
+        <div>
           <ul class="sidebar-menu">
               <li class="header">MAIN NAVIGATION</li>
               <sidemenu-headings sidemenus="sidemenus" ismainmenu="'true'" >
@@ -302,18 +302,34 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Dashboard
-        <small>Control panel</small>
+        Widgets
+        <small>Preview Page</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
+        <li class="active">Widgets</li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
-     
+     <div class="row">
+            <div class="col-lg-3 col-xs-6" ng-repeat="module in widgets">
+              <!-- small box -->
+              <div class="small-box {{module.bgColor}}">
+                <div class="inner">
+                  <h3>{{module.groupId}}</h3>
+                  <p>{{module.name}}</p>
+                </div>
+                  <div class="icon"> <i class="{{module.iconClass}}"></i> </div> <a href="{{module.url}}" class="small-box-footer">
+                  Create App Here <i class="fa fa-arrow-circle-right"></i>
+                </a> 
+              </div>
+            </div>
+            <!-- ./col -->
+          </div>
+            <!-- /.row -->  
+
     </section>
     <!-- /.content -->
   </div>
@@ -526,6 +542,7 @@
 <!-- Minified js file -->
 <script src="js/freniz.jquery.js"></script>
 
+
 <!-- <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="dist/js/angular.js"></script> -->
@@ -534,6 +551,7 @@
 <!-- <script type="text/javascript" src="dist/js/menu_script.js"></script>
 <script type="text/javascript" src="dist/js/app.js"></script>
 <script type="text/javascript" src="plugins/slimScroll/jquery.slimscroll.js"></script> -->
+
 
 </body>
 </html>
