@@ -5,14 +5,14 @@ var minify = require('gulp-minify-css');
 
 
 gulp.task('jsmin', function(){
-   gulp.src(['plugins/jQuery/jquery-2.2.3.min.js','bootstrap/js/bootstrap.min.js','dist/js/angular.js','dist/js/menu_script.js','dist/js/app.js','plugins/slimScroll/jquery.slimscroll.js'])
+   gulp.src(['plugins/jQuery/jquery-2.2.3.min.js','plugins/jQueryUI/jquery-ui.min.js','bootstrap/js/bootstrap.min.js','dist/js/angular.js','dist/js/menu_script.js','dist/js/app.js','plugins/slimScroll/jquery.slimscroll.js','plugins/colorpicker/bootstrap-colorpicker.js','plugins/colorpicker/fontawesome-iconpicker.js','dist/js/ace.js','dist/js/ui-ace.js','dist/js/sortable.js'])
    .pipe(concat('freniz.jquery.min.js'))
    .pipe(uglify())
    .pipe(gulp.dest('js/'));
 });
 
 gulp.task('js', function(){
-   gulp.src(['plugins/jQuery/jquery-2.2.3.min.js','bootstrap/js/bootstrap.min.js','dist/js/angular.js','dist/js/menu_script.js','dist/js/app.js','plugins/slimScroll/jquery.slimscroll.js','plugins/colorpicker/bootstrap-colorpicker.js','plugins/colorpicker/fontawesome-iconpicker.js'])
+   gulp.src(['plugins/jQuery/jquery-2.2.3.min.js','plugins/jQueryUI/jquery-ui.js','bootstrap/js/bootstrap.min.js','dist/js/angular.js','dist/js/menu_script.js','dist/js/app.js','plugins/slimScroll/jquery.slimscroll.js','plugins/colorpicker/bootstrap-colorpicker.js','plugins/colorpicker/fontawesome-iconpicker.js','dist/js/ace.js','dist/js/ui-ace.js','dist/js/sortable.js'])
    .pipe(concat('freniz.jquery.js'))
    .pipe(gulp.dest('js/'));
 });

@@ -17,17 +17,7 @@
      "value":"Rules",
      "Description":"Description",
      "bgColor":"bg-red",
-     "iconClass":"fa fa-ban",
-     "listOfValues": [
-         {
-           "label": "Yes",
-           "value": "yes"
-         },
-         {
-           "label": "No",
-           "value": "no"
-         }
-       ]
+     "iconClass":"fa fa-ban"
      },
      {
      "groupId":"002",
