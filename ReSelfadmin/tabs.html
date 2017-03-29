@@ -310,132 +310,72 @@
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
+
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
-                    Apps
-                    <small>Preview Page</small>
+                    Set Tabs For Your Dashboard
                 </h1>
-                <ol class="breadcrumb">
-                    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a>
-                    </li>
-                    <li class="active">Apps</li>
-                </ol>
             </section>
-
-            <!-- add button row start -->
-            <div class="row">
-                <!-- col start -->
-                <div class="col-sm-6 col-md-3 col-xs-4 pull-right">
-                    <!-- row start -->
-                    <div class="row">
-
-                        <div class="col-md-3 col-sm-3 col-xs-8">
-                            <button onclick="colorpicker()" data-toggle="modal" data-target="#myModal" class="btn btn-success">Add <span class="fa fa-plus"></span>
-                        </button>
-                        </div>
-                        <!-- dropdown start -->
-                        <div class="col-md-4 col-sm-6 col-xs-3">
-                            <div class="dropdown">
-                                <i class="fa fa-cog dropdown-toggle" type="button" data-toggle="dropdown">
-                          </i>
-                                <ul class="dropdown-menu">
-                                    <li><a href="dashboard.html"><i class="fa fa-eye" aria-hidden="true"> view</i></a></li>
-                                    <li><a href="dashboard.html"><i class="fa fa-cog" aria-hidden="true"> Settings</i></a></li>
-                                </ul>
+            <!-- Main content -->
+            <section class="content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="box box-info">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Tabs</h3>
                             </div>
-                        </div>
-                        <!-- dropdown end -->
-                    </div>
-                    <!-- row end -->
-                </div>
-                <!-- col end -->
-            </div>
-            <!-- row end -->
-            <!-- model start -->
-            <div class="modal fade" id="myModal" role="dialog">
-                <div class="modal-dialog">
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Add Details</h4>
-                        </div>
-                        <!-- model body start -->
-                        <div class="modal-body">
-                            <form class="form-horizontal">
-                                <div class="form-group" ng-repeat="app in apps">
-                                    <label class="col-sm-4 ">{{app.lable}}</label>
-                                    <div class="col-sm-6">
-                                        <input type="text" ng-if="app.lable=='Name'" class="form-control" id="pid">
-                                    </div>
+                            <!-- /.box-header -->
 
+                            <!-- form start -->
+                            <form class="form-horizontal" style="margin-top:10px;">
+                                <div class="form-group text-center">
+                                    <label for="name" class="col-sm-4 ">Select Initial Tab</label>
                                     <div class="col-sm-6">
-                                        <textarea class="form-control" rows="3" ng-if="app.lable=='Description'"></textarea>
-                                    </div>
-                                    <div class=" col-sm-6 input-group my-colorpicker2" ng-if="app.lable=='Pick Color'">
-                                        <input type="text" class="form-control">
-                                        <div class="input-group-addon"> <i></i> </div>
-                                    </div>
-
-                                    <div class="input-group col-sm-6 " ng-if="app.lable=='Pick Icon'">
-                                        <input data-placement="bottomRight" class="form-control icp icp-auto" value="fa-archive" type="text" /> <span class="input-group-addon"></span>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <select class="form-control " ng-if="app.lable=='Select Form'" type="select">
-                                          <option>--Select User--</option>
+                                        <select class="form-control">
+                                          <option>Home</option>
+                                          <option>Faqs</option>
+                                          <option>News</option>>
                                         </select>
                                     </div>
                                 </div>
-                            </form>
-                            <!-- form end -->
-                        </div>
-                        <!-- model body -->
-
-                        <!-- footer start -->
-                        <div class="modal-footer">
-                            <button type="submit" class="align-center btn btn-primary">Preview</button>
-                            <button type="submit" class="align-center btn btn-info">Save</button>
-                        </div>
-                        <!-- model footer end -->
-                    </div>
-                    <!-- model content end -->
-                </div>
-                <!-- end Modal dialog-->
-            </div>
-            <!-- Modal end-->
-            <div class="container" style="border-bottom: 1px solid #d2d6de;">
-                <hr>
-            </div>
-            <div class="panel-footer hidden">
-                <button class="btn btn-danger action-destroy">Destroy instances</button>
-                <button class="btn btn-default action-create">Create instances</button>
-            </div>
-
-            <!-- widget section start -->
-            <section class="content">
-                <div class="row" style="margin-top:10px;">
-                    <div class="col-md-3 col-sm-6 col-xs-12" ng-repeat="app in apps">
-                        <div class="info-box {{app.bgColor}}">
-                            <span class="info-box-icon"><i class="{{app.iconClass}}"></i></span>
-                            <div class="info-box-content">
-                                <span class="info-box-text">{{app.value}}</span>
-                                <span class="info-box-text"></span>
-                                <div class="progress">
-                                    <div class="progress-bar"></div>
+                                <div class="col-md-12">
+                                    <ul ui-sortable ng-model="tabs" class="list-group">
+                                        <li ng-repeat="tab in tabs" class="list-group-item">{{tab}}</li>
+                                    </ul>
                                 </div>
-                                <span class="progress-description">
-                                  {{app.Description}}
-                                </span>
-                            </div>
-                            <!-- /.info-box-content -->
+                                <!-- /.box-body -->
+                                <div class="box-footer">
+                                    <button type="submit" class="btn btn-info pull-right">Save</button>
+                                </div>
+                            </form>
+                            <!-- /.box-footer -->
                         </div>
-                        <!-- /.info-box -->
+                        <!-- /.box -->
                     </div>
+                    <!--/.col -->
+
+                    <!-- right column -->
+                    <div class="col-md-6">
+                        <!-- Horizontal Form -->
+                        <div class="box box-info">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Json Form</h3>
+                            </div>
+                            <!-- /.box-header -->
+                                <pre>{{tabs}}</pre>
+                                <!-- /.box-body -->
+                                <div class="box-footer">
+                                </div>
+                                <!-- /.box-footer -->
+                        </div>
+                        <!-- box end -->
+                    </div>
+                    <!-- /col -->
                 </div>
                 <!-- /.row -->
             </section>
-            <!-- widget section end -->
+            <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
 
@@ -646,87 +586,19 @@
     <script src="js/freniz.jquery.js"></script>
 
     <!-- <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="plugins/jQueryUI/jquery-ui.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="dist/js/angular.js"></script> -->
+<script type="text/javascript" src="dist/js/angular.js"></script>
+<script type="text/javascript" src="dist/js/ace.js"></script>
+<script type="text/javascript" src="dist/js/ui-ace.js"></script>
+<script type="text/javascript" src="dist/js/sortable.js"></script> -->
+
 
     <!-- Main script for angular -->
     <!-- <script type="text/javascript" src="dist/js/menu_script.js"></script>
 <script type="text/javascript" src="dist/js/app.js"></script>
 <script type="text/javascript" src="plugins/slimScroll/jquery.slimscroll.js"></script> -->
-    <script>
-        function colorpicker() {
-            //Colorpicker
-            $(".my-colorpicker1").colorpicker();
-            //color picker with addon
-            $(".my-colorpicker2").colorpicker();
-            $('.action-destroy').on('click', function() {
-                $.iconpicker.batch('.icp.iconpicker-element', 'destroy');
-            });
-            // Live binding of buttons
-            $(document).on('click', '.action-placement', function(e) {
-                $('.action-placement').removeClass('active');
-                $(this).addClass('active');
-                $('.icp-opts').data('iconpicker').updatePlacement($(this).text());
-                e.preventDefault();
-                return false;
-            });
-            $('.action-create').on('click', function() {
-                $('.icp-auto').iconpicker();
-                $('.icp-dd').iconpicker({
-                    //title: 'Dropdown with picker',
-                    //component:'.btn > i'
-                });
-                $('.icp-glyphs').iconpicker({
-                    title: 'Prepending glypghicons',
-                    icons: $.merge(['glyphicon-home', 'glyphicon-repeat', 'glyphicon-search', 'glyphicon-arrow-left', 'glyphicon-arrow-right', 'glyphicon-star'], $.iconpicker.defaultOptions.icons),
-                    fullClassFormatter: function(val) {
-                        if (val.match(/^fa-/)) {
-                            return 'fa ' + val;
-                        } else {
-                            return 'glyphicon ' + val;
-                        }
-                    }
-                });
-                $('.icp-opts').iconpicker({
-                    title: 'With custom options',
-                    icons: ['fa-github', 'fa-heart', 'fa-html5', 'fa-css3'],
-                    selectedCustomClass: 'label label-success',
-                    mustAccept: true,
-                    placement: 'bottomRight',
-                    showFooter: true,
-                    // note that this is ignored cause we have an accept button:
-                    hideOnSelect: true,
-                    templates: {
-                        footer: '<div class="popover-footer">' + '<div style="text-align:left; font-size:12px;">Placements: \n\
-                    <a href="#" class=" action-placement">inline</a>\n\
-                    <a href="#" class=" action-placement">topLeftCorner</a>\n\
-                    <a href="#" class=" action-placement">topLeft</a>\n\
-                    <a href="#" class=" action-placement">top</a>\n\
-                    <a href="#" class=" action-placement">topRight</a>\n\
-                    <a href="#" class=" action-placement">topRightCorner</a>\n\
-                    <a href="#" class=" action-placement">rightTop</a>\n\
-                    <a href="#" class=" action-placement">right</a>\n\
-                    <a href="#" class=" action-placement">rightBottom</a>\n\
-                    <a href="#" class=" action-placement">bottomRightCorner</a>\n\
-                    <a href="#" class=" active action-placement">bottomRight</a>\n\
-                    <a href="#" class=" action-placement">bottom</a>\n\
-                    <a href="#" class=" action-placement">bottomLeft</a>\n\
-                    <a href="#" class=" action-placement">bottomLeftCorner</a>\n\
-                    <a href="#" class=" action-placement">leftBottom</a>\n\
-                    <a href="#" class=" action-placement">left</a>\n\
-                    <a href="#" class=" action-placement">leftTop</a>\n\
-                    </div><hr></div>'
-                    }
-                }).data('iconpicker').show();
-            }).trigger('click');
-            // Events sample:
-            // This event is only triggered when the actual input value is changed
-            // by user interaction
-            $('.icp').on('iconpickerSelected', function(e) {
-                $('.lead .picker-target').get(0).className = 'picker-target fa-3x ' + e.iconpickerInstance.options.iconBaseClass + ' ' + e.iconpickerInstance.options.fullClassFormatter(e.iconpickerValue);
-            });
-        }
-    </script>
+
 </body>
 
 </html>

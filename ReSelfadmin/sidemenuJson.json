@@ -48,21 +48,21 @@
           {
          "id":"aboutUs",
          "menuHeading":"Widgets",
-         "url":"addWidgets.html",
+         "url":"widgetsView.html",
          "menuType":"text",
          "iconClass":"fa fa-th"
          },
          {
          "id":"aboutUs",
          "menuHeading":"Apps",
-         "url":"addApp.html",
+         "url":"appView.html",
          "menuType":"text",
          "iconClass":"fa fa-gears"
          },
          {
          "id":"aboutUs",
          "menuHeading":"tabs",
-         "url":"",
+         "url":"tabs.html",
          "menuType":"text",
          "iconClass":"fa fa-gears"
          },
