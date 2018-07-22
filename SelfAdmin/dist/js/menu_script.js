@@ -1,4 +1,6 @@
-var app = angular.module('menuList', []);
+var app = angular.module('menuList', ['ui.sortable']);
+
+
 app.directive("menuHead", function() {
     var directive = {};
     directive.restrict = 'E';
@@ -106,3 +108,16 @@ $(function() {
           }
       });
   });
+
+app.controller('sortCtrl', ['$scope', function($scope) {
+
+ // people array
+ $scope.people = ["Home","Faqs","News"];
+
+ // set up sortable options
+ $scope.sortableOptions = {
+   stop: function(e, ui) {
+     // do something here
+   }
+ };
+}]);

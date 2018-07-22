@@ -1,0 +1,10 @@
+<ul class="sidebar-menu">
+
+        <li ng-class="{dropdown:(menu.subMenus && menu.subMenus.length > 0)}" ng-repeat="menu in sidemenus">
+          <a href="{{(menu.subMenus?'#':menu.url)}}" ng-class="{'dropdown-toggle':(menu.subMenus && menu.subMenus.length > 0)}" role="button" aria-haspopup="true" aria-expanded="false"  ><i class="{{menu.iconClass}}"></i><span ng-if="(ismainmenu === 'true')">{{menu.menuHeading}}</span> {{ismainmenu === 'false'? menu.menuHeading : ""}}<span  ng-if="menu.iClass" class="pull-right-container"><i class="pull-right {{menu.iClass}}"></i></span></a>
+
+         <sidemenu-headings class="treeview-menu" sidemenus="menu.subMenus" ng-if="(menu.subMenus && menu.subMenus.length > 0)" ismainmenu="'false'"></sidemenu-headings>  
+                                   
+        
+        </li>
+</ul>

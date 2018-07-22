@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <meta name="description" content="Freniz software solutions design, develop and integrate web based products and customised software solutions for Education industry verticals to best suit their requirements">
+      <meta name="author" content="">
+      <link rel="icon" href="images/freniz-Url-logo.png" sizes="16x16">
+      <title>Freniz Software Solutions</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/freniz_tool_style.css">
+    
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="js/angular.js"></script>
+    <script type="text/javascript" src="js/freniz-script.js"></script>
+     <script type="text/javascript" src="js/freniz.js"></script>
+
+</head>
+<style>
+.sidebar-left .main{
+  float:right;
+}
+.idebar-left .sidebar{
+  float:left;
+}
+
+.sidebar-right .main{
+  float:left;
+}
+.idebar-right .sidebar{
+  float:right;
+}
+</style>
+<script>
+$(document).ready(function () { 
+ $( ".change_to_left" ).click(function() {   
+  $('.wrap').removeClass('sidebar-right');
+   $('.wrap').addClass('sidebar-left');  
+}); 
+  
+   $( ".change_to_right" ).click(function() {   
+  $('.wrap').removeClass('sidebar-left');
+   $('.wrap').addClass('sidebar-right');  
+}); 
+  
+  }); 
+</script>
+<body>
+ <div class="container wrap sidebar-right">
+   <div class="row">
+         <div class="header col-xs-12"> 
+                <div class="well">header</div>   
+     </div>
+  </div>
+<div class="container">
+  <div class="row">
+    <div class= "main col-xs-9">
+         <div class="well">body</div>   
+    </div> 
+    <div class="sidebar col-xs-3">
+         <div class="well">sidebar</div>
+   </div>
+  </div>
+</div>
+  
+ </div>  
+</div>
+<div class="container">     
+<div class="row">
+         <div class="Footer col-xs-12"> 
+                <div class="well">Footer</div>   
+     </div>
+  </div>
+
+<button class="change_to_left">change_to_left</button>
+  <button class="change_to_right">change_to_right</button>
+</body>
+</html>

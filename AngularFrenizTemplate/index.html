@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <meta name="description" content="Freniz software solutions design, develop and integrate web based products and customised software solutions for Education industry verticals to best suit their requirements">
+      <meta name="author" content="">
+      <link rel="icon" href="images/freniz-Url-logo.png" sizes="16x16">
+      <title>Freniz Software Solutions</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/freniz_tool_style.css">
+    
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/angular.js"></script>
+  <script type="text/javascript" src="js/freniz-script.js"></script>
+  <script type="text/javascript" src="js/freniz.js"></script>
+</head>
+
+<body ng-app="fieldList">
+    <!-- main section dividing -->
+    <div class="container" ng-controller="myctrl">
+        <!-- ng-repeat -->
+        
+                <div class="row tab-content">
+                    <div class="col-xs-12">
+                        <freniz-design-head />
+                    </div>
+                    <div class="col-xs-12" ng-repeat="section in forms.sections">
+                       <freniz-design-aboutus section="section" ng-if="section.id == 'aboutUs'"></freniz-design-aboutus>
+                       <freniz-design-home section="section" ng-if="section.id == 'home'">
+                       </freniz-design-home>
+                       <freniz-design-contact section="section" ng-if="section.id == 'contactUs'">
+                       </freniz-design-contact>
+                       <freniz-design-career section="section" ng-if="section.id == 'careers'">
+                       </freniz-design-career>
+                    </div>    
+                </div>
+    
+        <!-- starter-template -->
+    </div>
+    <!-- container -->
+</body>
+</html>

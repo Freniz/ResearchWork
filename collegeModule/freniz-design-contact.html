@@ -1,0 +1,62 @@
+ <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+<fieldset>
+<legend>Contact Us</legend>
+<!-- Text input-->
+
+<div class="form-group" ng-repeat="form in section.sectionProps.form.fields ">
+            <label class="col-md-2 control-label">{{form.props.label}}</label>
+            <div class="form-group">
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon" ng-if="form.type=='text'" ng-model="form.value"><i class="glyphicon glyphicon-user"></i></span>
+                        <input name="first_name" placeholder="First Name" class="form-control" ng-if="form.type=='text'" ng-model="form.value">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon" ng-if="form.type=='text1'" ng-model="form.value"><i class="glyphicon glyphicon-user"></i></span>
+                        <input name="last_name" placeholder="Last Name" class="form-control" ng-if="form.type=='text1'" ng-model="form.value">
+                    </div>
+                
+                <div class="input-group">
+                    <span class="input-group-addon" ng-if="form.type=='email'" ng-model="form.value"><i class="glyphicon glyphicon-envelope"></i></span>
+                    <input name="email" placeholder="E-Mail Address" class="form-control" ng-if="form.type=='email'" ng-model="form.value">
+                </div>
+
+
+                <div class="input-group">
+                    <span class="input-group-addon" ng-if="form.type=='phone'" ng-model="form.value"><i class="glyphicon glyphicon-earphone"></i></span>
+                    <input name="phone" placeholder="(845)555-1212" class="form-control" ng-if="form.type=='phone'" ng-model="form.value">
+                </div>
+
+
+                <div class="input-group">
+                    <span class="input-group-addon" ng-if="form.type=='textarea'" ng-model="form.value"><i class="glyphicon glyphicon-pencil"></i></span>
+                    <textarea class="form-control" name="comment" placeholder="Write Your Message" ng-if="form.type=='textarea'" ng-model="form.value"></textarea>
+                </div>
+
+            </div>
+            <!-- Button -->
+            <div class="input-group">
+            <label></label>
+                <button type="submit" class="btn btn-warning" ng-if="form.type=='button'" ng-model="form.value">Submit <span class="glyphicon glyphicon-send" ng-if="form.type=='button'" ng-model="form.value"></span></button>
+            </div>
+        </div>
+        </div>
+</fieldset>
+</form>
+             <div class="row" id="contactUs">
+               <div class="col-md-4" style="padding-left:30px">
+                  <h2>{{section.sectionProps.heading}}</h2>
+                  <ul>
+                     <li class="contactUs-icon contactUs-address">{{section.sectionProps.address}}
+                     </li>
+                     <li class="contactUs-icon contactUs-phone pull-left">{{section.sectionProps.phone}}</li></br>
+                     <li class="contactUs-icon contactUs-email pull-left">{{section.sectionProps.email}}</li>
+                  </ul>
+               </div>
+               <div class="col-md-8" style="padding-right:30px;">
+                  <img src="{{section.imgUrl}}" width="102%" />
+               </div>
+            </div>
+         </div>
+      </div>
+      

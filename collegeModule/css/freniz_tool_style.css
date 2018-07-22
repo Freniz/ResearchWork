@@ -1,0 +1,102 @@
+body {
+      padding-top: 50px;
+    }
+    .starter-template {
+      padding: 40px 15px;
+      text-align: center;
+    }
+    .freniz-navbar{
+      background-color : #0E2A12;
+      border-bottom:none;
+    }
+     .freniz-navbar .container{
+      margin-left:0px;
+      width:100%!important;
+      padding-left:0px;
+    }
+
+    .freniz-navbar .navbar-header{
+      padding-left:15px;
+      background-color:#D1D2D4;
+      min-width:250px;
+      background-image:url('../images/Freniz-Logo.png');
+      background-repeat:no-repeat;
+      background-position: center;
+      
+    }
+    @media (min-width:768px){
+      .freniz-navbar .navbar-header:after{
+          content: "";
+          display: block;
+          width: 0; 
+          height: 0; 
+          border-top: 50px solid transparent;
+          border-bottom: 50px solid transparent;
+          border-left: 50px solid #D1D2D4;
+          position: fixed;
+          z-index:1031;
+          top: -50px;
+          left: 250px;
+      }
+    }
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  .freniz-navbar ul.navbar-nav > li > a{
+  
+  color : #D1D2D3;
+  font-size : 1.3em;
+  text-align:center;
+}
+.freniz-navbar ul.navbar-nav > li > a:hover{
+  color:#FFF;
+}
+.freniz-navbar ul.navbar-nav > li > a:focus,.freniz-navbar ul.navbar-nav > li.active > a:focus{
+  color:#FFF;
+}
+.freniz-navbar ul.navbar-nav > li.active > a ,.freniz-navbar ul.navbar-nav > li.active > a:hover {
+  
+  color : #FFF;
+  background-color:transparent !important;
+  background-image:url('../images/Arrow_icon.png');
+  background-repeat: no-repeat;
+    background-position: center bottom;
+  
+}
+
+.page-container{
+  margin-top:50px;
+}
+#aboutUs{
+  text-align: center;
+}
+#contactUs{
+  background-color:#dadad9;
+}
+.contactUs-icon{
+  padding-left:35px;
+  padding-right:5px;
+  padding-bottom:5px;
+  padding-top:5px;
+  margin-bottom:10px;
+  list-style:none;
+  background-repeat: no-repeat;
+  background-position: left center;
+  
+}
+.contactUs-address{
+  background-image:url('../images/Map_Icon.png');
+}
+.contactUs-phone{
+  background-image:url('../images/Phone_Icon.png');
+}
+.contactUs-email{
+  background-image:url('../images/Email_Icon.png');
+}
+.contactUs-map{
+  background-image:url('../images/Freniz-Map.png');
+  height:100%;
+}
+

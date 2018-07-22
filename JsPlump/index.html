@@ -1,0 +1,58 @@
+
+<html>
+    <head>
+      <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jsPlumb/1.4.1/jquery.jsPlumb-1.4.1-all-min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="js/script.js"></script>
+      
+  </head>   
+ 
+  <body>
+
+    <div class="container-fluid">
+
+      <!-- Header open -->
+        <header class="row">        
+              <div class="head col-md-12 col-xs-12">
+                Js Plumb
+              </div>
+        </header>
+
+
+ <!-- Adds new windows to the page -->
+         <div class="container">
+                <div class="pull-right" id="details" style="margin-top:30px;">
+                        <button class="btn btn-success button_add_window" type="button">
+                                  Add Window
+                        </button>
+                    </div>
+                </div>
+        </div> 
+
+        <!-- Primary window - used as html templated for descendants -->
+    <div class="leftBox pull-left">
+        <div class="window" style="left: 20px" id="MainContainer">
+            <div class="button_container">
+                <div class="button_add">Add Point</div>
+               
+                <div class="button_remove" style="margin-top:80px; margin-left:120px;height:15px;width:15px;"><i class="fa fa-times" aria-hidden="true"></i></div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="window hidden" style="left: 200px" id="container1">
+    </div>
+    <div class="rightBox pull-right">
+        <table>
+        </table>
+    </div>
+</body>
+
+</html>
